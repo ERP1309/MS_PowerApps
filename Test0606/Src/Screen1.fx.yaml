@@ -1,0 +1,16 @@
+Screen1 As screen:
+    BackgroundImage: ='logo ULN'
+    Fill: =RGBA(39, 113, 194, 1)
+    OnVisible: =
+
+    Timer2 As timer:
+        AutoStart: =true
+        Duration: =1000
+        Height: =70
+        OnTimerEnd: =Navigate(Screen5,ScreenTransition.Cover)
+        Visible: =false
+        Width: =176
+        X: =56
+        Y: =1032
+        ZIndex: =1
+

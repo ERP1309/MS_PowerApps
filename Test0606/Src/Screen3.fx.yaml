@@ -1,0 +1,46 @@
+Screen3 As screen:
+    Fill: =RGBA(255, 255, 255, 1)
+
+    Image2 As image:
+        Height: =320
+        Image: =User().Image
+        RadiusBottomLeft: =300
+        RadiusBottomRight: =300
+        RadiusTopLeft: =300
+        RadiusTopRight: =300
+        Width: =320
+        X: =160
+        Y: =263
+        ZIndex: =1
+
+    Label7 As label:
+        Align: =Align.Center
+        Height: =126
+        Size: =40
+        Text: |-
+            ="Bienvenido "   &
+             User().FullName 
+        Width: =560
+        X: =40
+        Y: =91
+        ZIndex: =3
+
+    Timer1 As timer:
+        AutoStart: =true    
+        Duration: =2000
+        Height: =70
+        OnTimerEnd: =Navigate(Screen2)
+        Visible: =false
+        Width: =13
+        X: =40
+        Y: =966
+        ZIndex: =4
+
+    Image4 As image:
+        Height: =320
+        Image: =cargando
+        Width: =320
+        X: =160
+        Y: =583
+        ZIndex: =5
+
