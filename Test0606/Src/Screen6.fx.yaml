@@ -1,2 +1,15 @@
 Screen6 As screen:
 
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =500
+        Items: =Tabla3
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =40
+        ZIndex: =1
+
