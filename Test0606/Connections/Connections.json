@@ -1,7 +1,7 @@
 {
-  "ed477804-1ccb-4472-ba5d-a8cb46cee3ae": {
+  "33c61e54-7054-4c17-af6b-53483af7ae6b": {
     "connectionRef": {
-      "displayName": "Spatial Services",
+      "displayName": "Servicios espaciales",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
     },
@@ -11,7 +11,53 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "ed477804-1ccb-4472-ba5d-a8cb46cee3ae"
+    "id": "33c61e54-7054-4c17-af6b-53483af7ae6b"
+  },
+  "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
+    "connectionRef": {
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel"
+    },
+    "datasets": {
+      "b!dgTpmUhB7Ey1IAjcqp4gdYIzDk91tCdEmruaOEF9PH3X8hQFWAENSYNvVwGujtH4.01GCIPK55TA55LC6M4DFEYJLZ6UW7UOPZ4": {
+        "dataSources": {
+          "Tabla1": {
+            "tableName": "Tabla1"
+          },
+          "Tabla2": {
+            "tableName": "Tabla2"
+          },
+          "Tabla3": {
+            "tableName": "Tabla3"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tabla1",
+      "Tabla2",
+      "Tabla3"
+    ],
+    "dependencies": {
+      "fileSource": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
+    },
+    "dependents": [],
+    "id": "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
+  },
+  "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
+    "connectionRef": {
+      "displayName": "OneDrive para la Empresa",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
+    ],
+    "id": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
   },
   "f04ea987-8e16-46f0-91ae-8b1fec414e4f": {
     "connectionRef": {

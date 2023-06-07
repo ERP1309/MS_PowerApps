@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "Tabla2": "{\"name\":\"Tabla2\",\"title\":\"Tabla2\",\"x-ms-permission\":\"read-write\",\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Id\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Id\"},\"Empresas\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Empresas\"},\"Ubicación_x0020_-_x0020_Latitude\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Ubicación - Latitude\"},\"Ubicación_x0020_-_x0020_Longitude\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Ubicación - Longitude\"},\"Horario_x0020_Entrada\":{\"type\":\"string\",\"format\":\"date-time\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Horario Entrada\"},\"Horario_x0020_Salida\":{\"type\":\"string\",\"format\":\"date-time\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Horario Salida\"},\"__PowerAppsId__\":{\"type\":\"string\",\"x-ms-keyOrder\":1,\"x-ms-keyType\":\"primary\",\"x-ms-sort\":\"none\",\"x-ms-permission\":\"read-only\",\"title\":\"Row id\"}}}}}"
+  },
+  "EntityName": "Tabla2",
+  "TableName": "Tabla2"
+}
