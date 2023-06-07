@@ -66,7 +66,7 @@ Screen5 As screen:
                     Screen3,
                     ScreenTransition.Cover
                 ) & Reset(Latitude1) & Reset(Longitud1) & Reset(UserLog_2) & Reset(ClvLog_2),
-                Error("Clave o Contraseña son incorrectos") & Reset(ClvLog_2) & Reset(Latitude1) & Reset(Longitud1)
+                Error("Usuario o Contraseña son incorrectos") & Reset(ClvLog_2) & Reset(Latitude1) & Reset(Longitud1)
             )
         Size: =24
         Text: ="Ingresar"
