@@ -62,7 +62,7 @@ Screen5 As screen:
         Height: =70
         OnSelect: |-
             =If(
-               Upper( UserLog_2.Text) = "ADRIANO" And ClvLog_2.Text = "a123456A",
+               LookUp(Tabla3,Text(Usuario)=Upper( UserLog_2.Text))  And ClvLog_2.Text = "a123456A",
                 Navigate(Screen3,ScreenTransition.Cover) & Reset(Latitude1) & Reset(Longitud1)& Reset(UserLog_2) & Reset(ClvLog_2),
                 Error("Clave o Contraseña son incorrectos") & Reset(ClvLog_2) & Reset(Latitude1) & Reset(Longitud1)
             )
