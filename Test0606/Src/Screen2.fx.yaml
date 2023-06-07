@@ -38,23 +38,28 @@ Screen2 As screen:
 
     "Map1 As 'Mapa (versión preliminar)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
+        Compass: =false
         CurrentLocation: =false
         CurrentLocationLatitude: =Latitude_1
         CurrentLocationLongitude: =Longitude_1
         DefaultLatitude: =Latitude_1
+        DefaultLocation: =true
         DefaultLongitude: =Longitude_1
-        DefaultZoomLevel: =300
+        DefaultZoomLevel: =15
         DisplayMode: =DisplayMode.Edit
         Height: =635
+        InfoCards: ='Map.InfoCards'.None
         Items: =Location
         ItemsLatitudes: ="Latitude"
         ItemsLongitudes: ="Longitude"
-        PinColor: =RGBA(29, 114, 169, 1)
+        PinColor: =RGBA(255, 0, 0, 1)
+        Pitch: =false
         Visible: =true
         Width: =640
         X: =0
         Y: =500
         ZIndex: =8
+        Zoom: =false
 
     Label5 As label:
         Height: =83
