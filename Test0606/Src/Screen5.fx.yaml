@@ -60,14 +60,7 @@ Screen5 As screen:
 
     Button3 As button:
         Height: =70
-        OnSelect: |-
-            =If(Upper(UserLog_2.Text)="ADRIANO" And ClvLog_2.Text = "a123456A",
-                Navigate(
-                    Screen3,
-                    ScreenTransition.Cover
-                ) & Reset(Latitude1) & Reset(Longitud1) & Reset(UserLog_2) & Reset(ClvLog_2),
-                Error("Usuario o Contraseña son incorrectos") & Reset(ClvLog_2) & Reset(Latitude1) & Reset(Longitud1)
-            )
+        OnSelect: =If(If(IsBlank(Set(User,LookUp(Tabla3,Usuario=Upper(UserLog_2.Text)))), false , true ) And If(IsBlank(User.Clave=ClvLog_2.Text), false , true ),Navigate(Screen3,ScreenTransition.Cover)&Reset(Latitude1)&Reset(Longitud1)&Reset(UserLog_2)&Reset(ClvLog_2),Error("Usuario o Contraseña son incorrectos")&Reset(ClvLog_2)&Reset(Latitude1)&Reset(Longitud1))
         Size: =24
         Text: ="Ingresar"
         Width: =280
