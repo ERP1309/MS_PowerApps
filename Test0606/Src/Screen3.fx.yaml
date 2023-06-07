@@ -15,14 +15,14 @@ Screen3 As screen:
 
     Label7 As label:
         Align: =Align.Center
-        Height: =126
+        Height: =176
         Size: =40
         Text: |-
             ="Bienvenido "   &
-             User().FullName 
-        Width: =560
+             User.Correo
+        Width: =551
         X: =40
-        Y: =91
+        Y: =42
         ZIndex: =3
 
     Timer1 As timer:
