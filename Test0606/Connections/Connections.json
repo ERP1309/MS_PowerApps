@@ -1,18 +1,4 @@
 {
-  "33c61e54-7054-4c17-af6b-53483af7ae6b": {
-    "connectionRef": {
-      "displayName": "Servicios espaciales",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Serviciosespaciales"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "33c61e54-7054-4c17-af6b-53483af7ae6b"
-  },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
       "displayName": "Excel",
@@ -44,6 +30,20 @@
     },
     "dependents": [],
     "id": "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
+  },
+  "9d8774e0-624e-4a8a-b256-3406a0b27666": {
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Serviciosespaciales"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9d8774e0-624e-4a8a-b256-3406a0b27666"
   },
   "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
     "connectionRef": {
