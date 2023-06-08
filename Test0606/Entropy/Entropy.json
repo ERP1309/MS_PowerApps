@@ -3,44 +3,44 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Button1": 19,
-    "Button3": 11,
-    "Button4": 24,
-    "ClvLog_1": 9,
-    "ClvLog_2": 10,
-    "DataTable1": 13,
+    "Button1": 11,
+    "Button3": 32,
+    "Button4": 16,
+    "ClvLog_1": 30,
+    "ClvLog_2": 31,
+    "DataTable1": 5,
     "Host": 3,
-    "Image2": 28,
-    "Image4": 29,
-    "Label10": 21,
-    "Label10_1": 23,
-    "Label4": 32,
-    "Label5": 20,
-    "Label5_1": 22,
-    "Label6": 6,
-    "Label7": 27,
-    "Latitude1": 17,
-    "Longitud1": 18,
-    "Map1": 25,
-    "Rectangle1": 5,
-    "Screen1": 14,
-    "Screen2": 16,
-    "Screen3": 26,
-    "Screen4": 31,
-    "Screen5": 4,
-    "Screen6": 12,
-    "Timer1": 30,
-    "Timer2": 15,
-    "UserLog_1": 8,
-    "UserLog_2": 7
+    "Image2": 20,
+    "Image4": 21,
+    "Label10": 13,
+    "Label10_1": 15,
+    "Label4": 24,
+    "Label5": 12,
+    "Label5_1": 14,
+    "Label6": 27,
+    "Label7": 19,
+    "Latitude1": 9,
+    "Longitud1": 10,
+    "Map1": 17,
+    "Rectangle1": 26,
+    "Screen1": 6,
+    "Screen2": 8,
+    "Screen3": 18,
+    "Screen4": 23,
+    "Screen5": 25,
+    "Screen6": 4,
+    "Timer1": 22,
+    "Timer2": 7,
+    "UserLog_1": 29,
+    "UserLog_2": 28
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/07/2023 18:07:46",
+  "HeaderLastSavedDateTimeUTC": "06/08/2023 01:22:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": "\"/providers/microsoft.powerapps/apis/shared_excel/connections/253293b697e14766b74e1788643daf83\"",
-    "9d8774e0-624e-4a8a-b256-3406a0b27666": "\"/providers/microsoft.powerapps/apis/shared_microsoftspatialservices/connections/a6ccc0252a004e208d6c04b50319240a\"",
+    "d43811ad-dce5-4df0-b81d-cad3601272c0": "\"/providers/microsoft.powerapps/apis/shared_microsoftspatialservices/connections/a6ccc0252a004e208d6c04b50319240a\"",
     "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/9ca91b12-cf37-43e8-a173-1187-634309ea\"",
     "f04ea987-8e16-46f0-91ae-8b1fec414e4f": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/b178948bd23d4a069dc2a9499c45b865\""
   },
@@ -50,8 +50,8 @@
     "logo ULN": "f804a924-61c0-40ce-9ad9-c49f3aedff34.png"
   },
   "LocalResourceRootPaths": {
-    "cargando": "https://docserverpwaprodwus.blob.core.windows.net/eb3ba81c-6f5d-45ce-9d96-0a60041f7e0a-1/resource/Assets0Images06fd62f1a-9d93-4910-94a8-97a00a01cb14.gif?sv=2018-03-28&sr=b&sig=ycDeQdFrOLHbMMtPxYqR%2F0i37f2msZTghR2ODswzygY%3D&spr=https&se=2023-06-08T12%3A50%3A21Z&sp=r",
-    "logo ULN": "https://docserverpwaprodwus.blob.core.windows.net/eb3ba81c-6f5d-45ce-9d96-0a60041f7e0a-1/resource/Assets0Images0f804a924-61c0-40ce-9ad9-c49f3aedff34.png?sv=2018-03-28&sr=b&sig=Ixr1LNQZlKqI4i18ESGhMt%2FQrVN%2FAjfZOQ8zSxSHqDE%3D&spr=https&se=2023-06-08T12%3A50%3A21Z&sp=r"
+    "cargando": "https://docserverpwaprodwus.blob.core.windows.net/8065d58b-33e8-4f11-a3c9-8da16be40c77-1/resource/Assets0Images06fd62f1a-9d93-4910-94a8-97a00a01cb14.gif?sv=2018-03-28&sr=b&sig=MGjtr%2FeE7KYpVv26oFrYWN%2B3I%2Fc%2FZzan0jitAScHG0s%3D&spr=https&se=2023-06-09T01%3A14%3A51Z&sp=r",
+    "logo ULN": "https://docserverpwaprodwus.blob.core.windows.net/8065d58b-33e8-4f11-a3c9-8da16be40c77-1/resource/Assets0Images0f804a924-61c0-40ce-9ad9-c49f3aedff34.png?sv=2018-03-28&sr=b&sig=Ajwj9GcN%2FD%2FHrGJdr7ZZGG2Bm0KeRfns8zhe539kH%2Bs%3D&spr=https&se=2023-06-09T01%3A14%3A51Z&sp=r"
   },
   "OldLogoFileName": "eof4fkeg.jpg",
   "OrderComponentMetadata": {},
@@ -69,12 +69,12 @@
   },
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 3,
-    "image": 5,
-    "label": 1,
-    "rectangle": 0,
-    "text": 2,
-    "timer": 4
+    "button": 2,
+    "image": 4,
+    "label": 3,
+    "rectangle": 5,
+    "text": 1,
+    "timer": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -914,7 +914,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1665014,
+    "AnalysisLoadTime": 0.1751006,
     "ControlCount": {
       "button": 3,
       "dataTable": 1,
@@ -926,7 +926,7 @@
       "text": 4,
       "timer": 2
     },
-    "DeserializationLoadTime": 1.2143509
+    "DeserializationLoadTime": 1.0932991
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

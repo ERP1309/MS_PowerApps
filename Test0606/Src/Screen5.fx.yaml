@@ -52,7 +52,7 @@ Screen5 As screen:
         Default: =""
         Height: =63
         HintText: ="E-mail"
-        OnChange: =Set(User,LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text)))
+        OnChange: =Set(UserBD,LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text)))
         Size: =21
         Width: =434
         X: =186
@@ -61,7 +61,7 @@ Screen5 As screen:
 
     Button3 As button:
         Height: =70
-        OnSelect: =If(If(IsBlank(LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text))), false , true ) And User.Clave=ClvLog_2.Text,Navigate(Screen3,ScreenTransition.Cover)&Reset(Latitude1)&Reset(Longitud1)&Reset(UserLog_2)&Reset(ClvLog_2),Error("Usuario o Contraseña son incorrectos")&Reset(ClvLog_2)&Reset(Latitude1)&Reset(Longitud1))
+        OnSelect: =If(If(IsBlank(LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text))), false , true ) And UserBD.Clave=ClvLog_2.Text,Navigate(Screen3,ScreenTransition.Cover)&Reset(Latitude1)&Reset(Longitud1)&Reset(UserLog_2)&Reset(ClvLog_2),Error("Usuario o Contraseña son incorrectos")&Reset(ClvLog_2)&Reset(Latitude1)&Reset(Longitud1))
         Size: =24
         Text: ="Ingresar"
         Width: =280
