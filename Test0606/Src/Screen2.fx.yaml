@@ -104,9 +104,19 @@ Screen2 As screen:
         Height: =70
         OnSelect: =Navigate(Screen1)&Reset(Latitude1)&Reset(Longitud1)
         Size: =24
-        Text: ="Guardar"
+        Text: ="Hora Ingreso"
         Width: =280
-        X: =160
+        X: =40
         Y: =404
         ZIndex: =13
+
+    Button4_1 As button:
+        Height: =70
+        OnSelect: =Navigate(Screen1)&Reset(Latitude1)&Reset(Longitud1)
+        Size: =24
+        Text: ="Hora Salida"
+        Width: =280
+        X: =336
+        Y: =404
+        ZIndex: =14
 
