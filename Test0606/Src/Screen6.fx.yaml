@@ -1,5 +1,10 @@
 Screen6 As screen:
 
+    Rectangle2 As rectangle:
+        Height: =95
+        Width: =640
+        ZIndex: =1
+
     DataTable1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
@@ -11,5 +16,12 @@ Screen6 As screen:
         Width: =640
         X: =0
         Y: =40
-        ZIndex: =1
+        ZIndex: =2
+
+    Icon1 As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Hamburger
+        X: =14
+        Y: =15
+        ZIndex: =3
 

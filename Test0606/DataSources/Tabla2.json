@@ -12,6 +12,7 @@
       "Horario_x0020_Entrada": "Horario Entrada",
       "Horario_x0020_Salida": "Horario Salida",
       "Id": "Id",
+      "Tolerancia_x0020__x0020_de_x0020_Distancia": "Tolerancia  de Distancia",
       "Ubicación_x0020_-_x0020_Latitude": "Ubicación - Latitude",
       "Ubicación_x0020_-_x0020_Longitude": "Ubicación - Longitude"
     },
