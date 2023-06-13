@@ -16,7 +16,7 @@ Screen6 As screen:
         TemplatePadding: =0
         TemplateSize: =63
         Width: =If(reducir,70,316)
-        Y: =108
+        Y: =90
         ZIndex: =1
 
         Image3 As image:
