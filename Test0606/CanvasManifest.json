@@ -1,7 +1,7 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.331",
+    "DocVersion": "1.332",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -48,6 +48,7 @@
       "enablerulespanel": false,
       "enableruntimepolicies": false,
       "enablesaveloadcleardataonweb": false,
+      "enableupdateifdelegation": false,
       "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
@@ -64,6 +65,7 @@
       "improvedmediacapture": false,
       "improvedtabstopbehavior": true,
       "impurenodedelegation": false,
+      "isemptyrequirestableargument": true,
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
       "mobilenativerendering": false,
@@ -115,7 +117,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Marcación",
     "OriginatingVersion": "1.330",
-    "ParserErrorCount": 1
+    "ParserErrorCount": 0
   },
   "PublishInfo": {
     "AppName": "Marcación",

@@ -65,7 +65,7 @@
     "Name": "groupContainer",
     "Version": "1.0"
   },
-  "hostControl": {
+  "Host": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "HostType": "Default",
@@ -166,7 +166,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "CenterLocation": {
         "Type": {
@@ -188,7 +188,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "ClickedLocation": {
         "Type": {
@@ -210,7 +210,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "DeletedShape": {
         "Type": {
@@ -256,7 +256,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "GeocodedItems": {
         "Type": {
@@ -290,7 +290,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "RouteDirection": {
         "Type": {
@@ -428,7 +428,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       },
       "SelectedShape": {
         "Type": {
@@ -474,7 +474,7 @@
             }
           ]
         },
-        "Version": "1.331"
+        "Version": "1.332"
       }
     },
     "PCFDynamicSchemaForIRRetrieval": {

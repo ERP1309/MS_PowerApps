@@ -17,7 +17,7 @@ Screen3 As screen:
         Align: =Align.Center
         Height: =176
         Size: =40
-        Text: ="Bienvenido " & UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName)
+        Text: ="Bienvenido " & UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName
         Width: =551
         X: =40
         Y: =42
