@@ -27,7 +27,7 @@ Scr_Bienvenido As screen:
         AutoStart: =true    
         Duration: =2000
         Height: =70
-        OnTimerEnd: =Navigate(Scr_Fichaje)
+        OnTimerEnd: =Navigate(Scr_Menu)
         Visible: =false
         Width: =13
         X: =40

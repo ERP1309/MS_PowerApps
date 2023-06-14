@@ -145,9 +145,9 @@ Scr_Fichaje As screen:
                 {'Tipo De Marcación': "Entrada"},
                 {'Hora Marcación': hora_1},
                 {Tardanza: Tiempo_Tardanza}
-            );Reset(Dd_empresa)And Reset(UserLog_2) 
+            );Navigate(Scr_Menu,ScreenTransition.Cover)
         Size: =24
-        Text: ="Hora Ingreso"
+        Text: ="Registrar Ingreso"
         Width: =280
         X: =40
         Y: =404
@@ -223,9 +223,9 @@ Scr_Fichaje As screen:
                 {'Tipo De Marcación': "Salida"},
                 {'Hora Marcación': hora_1},
                 {'Minutos Adicionales':Min_Adicionales}
-            )
+            );Navigate(Scr_Menu,ScreenTransition.Cover)
         Size: =24
-        Text: ="Hora Salida"
+        Text: ="Registrar Salida"
         Width: =280
         X: =336
         Y: =404

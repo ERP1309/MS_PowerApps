@@ -135,6 +135,7 @@
     "Scr_Log",
     "Scr_Bienvenido",
     "Scr_Menu",
-    "Scr_Fichaje"
+    "Scr_Fichaje",
+    "Scr_Historial"
   ]
 }
