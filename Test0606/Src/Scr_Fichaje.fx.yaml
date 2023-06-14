@@ -88,25 +88,32 @@ Scr_Fichaje As screen:
             ) And Set(
                 Tiempo_Tardanza,
                 If(
-                    DateAdd(
-                        Text(
-                            LookUp(
-                                Tabla2,
-                                Empresas = "ULN Bellavista",
-                                'Horario Entrada'
+                    DateDiff(
+                        DateAdd(
+                            Text(
+                                LookUp(
+                                    Tabla2,
+                                    Empresas = "ULN Bellavista",
+                                    'Horario Entrada'
+                                ),
+                                "h:mm am/pm"
                             ),
-                            "h:mm am/pm"
+                            Text(
+                                LookUp(
+                                    Tabla2,
+                                    Empresas = "ULN Bellavista",
+                                    'Tiempo de Tolerancia (Min.)'
+                                ),
+                                "h:mm am/pm"
+                            ),
+                            TimeUnit.Minutes
                         ),
                         Text(
-                            LookUp(
-                                Tabla2,
-                                Empresas = "ULN Bellavista",
-                                'Tiempo de Tolerancia (Min.)'
-                            ),
+                            hora_1,
                             "h:mm am/pm"
                         ),
                         TimeUnit.Minutes
-                    ) > hora_1,
+                    ) > 0,
                     DateDiff(
                         Text(
                             LookUp(
@@ -124,17 +131,20 @@ Scr_Fichaje As screen:
                     ),
                     0
                 )
-            )/*;;
+            );
             Patch(
-                Tabla1;
-                Defaults(Tabla1);
-                {'Usuario Marcación': UserBD.'Id. Usuario'};
-                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName};
-                {'E-Mail': UsuariosdeOffice365.MyProfile().DisplayName};
-                {Latitude: Latitude_1};
-                {Longitude: Longitude_1};
-                {'Tipo De Marcación': "Entrada"}
-            )*/
+                Tabla1,
+                Defaults(Tabla1),
+                {Guid:Text(GUID())},
+                {'Usuario Marcación': UserBD.'Id. Usuario'},
+                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
+                {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {Latitude: Latitude_1},
+                {Longitude: Longitude_1},
+                {'Tipo De Marcación': "Entrada"},
+                {'Hora Marcación': hora_1},
+                {Tardanza: Tiempo_Tardanza}
+            )
         Size: =24
         Text: ="Hora Ingreso"
         Width: =280
@@ -144,7 +154,74 @@ Scr_Fichaje As screen:
 
     Button4_1 As button:
         Height: =70
-        OnSelect: =Set(Latitude_1,Text(Location.Latitude))And Set(Longitude_1,Text(Location.Longitude))And Set(Fecha_1,Today())//And Set(hora_1;TimeValue(Now()))
+        OnSelect: |-
+            =Set(
+                Latitude_1,
+                Text(Location.Latitude)
+            ) And Set(
+                Longitude_1,
+                Text(Location.Longitude)
+            ) And Set(
+                Fecha_1,
+                Today()
+            ) And Set(
+                hora_1,
+                TimeValue(
+                    Text(
+                        Now(),
+                        "h:mm am/pm"
+                    ),
+                    "es-MX"
+                )
+            ) And Set(
+                Min_Adicionales,
+                If(
+                    DateDiff(
+                        Text(
+                            hora_1,
+                            "h:mm am/pm"
+                        ),
+                        Text(
+                            LookUp(
+                                Tabla2,
+                                Empresas = "ULN Bellavista",
+                                'Horario Salida'
+                            ),
+                            "h:mm am/pm"
+                        ),
+                        TimeUnit.Minutes
+                    ) > 0,
+                    DateDiff(
+                        Text(
+                            LookUp(
+                                Tabla2,
+                                Empresas = "ULN Bellavista",
+                                'Horario Salida'
+                            ),
+                            "h:mm am/pm"
+                        ),
+                        Text(
+                            hora_1,
+                            "h:mm am/pm"
+                        ),
+                        TimeUnit.Minutes
+                    ),
+                    0
+                )
+            );
+            Patch(
+                Tabla1,
+                Defaults(Tabla1),
+                {Guid: Text(GUID())},
+                {'Usuario Marcación': UserBD.'Id. Usuario'},
+                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
+                {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {Latitude: Latitude_1},
+                {Longitude: Longitude_1},
+                {'Tipo De Marcación': "Salida"},
+                {'Hora Marcación': hora_1},
+                {'Minutos Adicionales':Min_Adicionales}
+            )
         Size: =24
         Text: ="Hora Salida"
         Width: =280
@@ -174,7 +251,7 @@ Scr_Fichaje As screen:
                     "h:mm am/pm"
                 ),
                 TimeUnit.Minutes
-            ),hora_1,TimeUnit.Minutes)
+            ),Text(hora_1,"h:mm am/pm"),TimeUnit.Minutes)
         Width: =560
         X: =40
         Y: =205
