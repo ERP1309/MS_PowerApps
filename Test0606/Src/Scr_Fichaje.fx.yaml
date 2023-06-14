@@ -190,7 +190,7 @@ Scr_Fichaje As screen:
                             "h:mm am/pm"
                         ),
                         TimeUnit.Minutes
-                    ) > 0,
+                    ) < 0,
                     DateDiff(
                         Text(
                             LookUp(
