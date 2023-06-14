@@ -184,7 +184,7 @@ Scr_Fichaje As screen:
                         Text(
                             LookUp(
                                 Tabla2,
-                                Empresas = Dd_empresa.Selected.Empresas,
+                                Empresas = Text(Dd_empresa.Selected.Empresas),
                                 'Horario Salida'
                             ),
                             "h:mm am/pm"
@@ -195,7 +195,7 @@ Scr_Fichaje As screen:
                         Text(
                             LookUp(
                                 Tabla2,
-                                Empresas = Dd_empresa.Selected.Empresas,
+                                Empresas = Text(Dd_empresa.Selected.Empresas),
                                 'Horario Salida'
                             ),
                             "h:mm am/pm"
@@ -261,8 +261,18 @@ Scr_Fichaje As screen:
         Height: =70
         Items: =Tabla2
         Size: =21
-        Width: =575
-        X: =32
+        Width: =299
+        X: =306
         Y: =120
         ZIndex: =16
+
+    Label2 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Empresa Asignada: "
+        Width: =266
+        X: =40
+        Y: =120
+        ZIndex: =17
 
