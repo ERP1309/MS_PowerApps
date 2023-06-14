@@ -81,7 +81,7 @@ Scr_Fichaje As screen:
             ) And Set(
                 Tiempo_Tardanza,
                 
-                Text(
+                hora_1- Text(
                     LookUp(
                         Tabla2,
                         Empresas = "ULN Bellavista",
