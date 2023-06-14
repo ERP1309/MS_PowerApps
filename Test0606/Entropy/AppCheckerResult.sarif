@@ -610,36 +610,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Tabla1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Tabla1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Tabla1",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-NotOfflineConnectors",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Tabla2"
                 }
               ],

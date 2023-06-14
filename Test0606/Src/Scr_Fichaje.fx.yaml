@@ -37,8 +37,7 @@ Scr_Fichaje As screen:
     Label5_1 As label:
         Height: =108
         Size: =21
-        Text: |-
-            =Text(hora_1," hh:mm AM/PM")
+        Text: =hora_1
         Width: =240
         X: =200
         Y: =325
@@ -78,24 +77,27 @@ Scr_Fichaje As screen:
                 Today()
             ) And Set(
                 hora_1,
-                Hour(Now())
-            )
-            
-             And Set(
+                Text( Now(), DateTimeFormat.LongTime24 )
+            ) And Set(
                 Tiempo_Tardanza,
-                Minute(hora_1-LookUp(Tabla2,Empresas="ULN Bellavista",'Horario Entrada')
-             )   
-            );
+                
+                
+                    LookUp(
+                        Tabla2,
+                        Empresas = "ULN Bellavista",
+                        'Horario Entrada'
+                    )
+            )/*;;
             Patch(
-                Tabla1,
-                Defaults(Tabla1),
-                {'Usuario Marcación': UserBD.'Id. Usuario'},
-                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName },
-                {'E-Mail': UsuariosdeOffice365.MyProfile().DisplayName },
-                {Latitude: Latitude_1 },
-                {Longitude:Longitude_1},
-                {'Tipo De Marcación':"Entrada"}
-            )
+                Tabla1;
+                Defaults(Tabla1);
+                {'Usuario Marcación': UserBD.'Id. Usuario'};
+                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName};
+                {'E-Mail': UsuariosdeOffice365.MyProfile().DisplayName};
+                {Latitude: Latitude_1};
+                {Longitude: Longitude_1};
+                {'Tipo De Marcación': "Entrada"}
+            )*/
         Size: =24
         Text: ="Hora Ingreso"
         Width: =280
@@ -105,7 +107,7 @@ Scr_Fichaje As screen:
 
     Button4_1 As button:
         Height: =70
-        OnSelect: =Set(Latitude_1,Text(Location.Latitude))And Set(Longitude_1,Text(Location.Longitude))And Set(Fecha_1,Today())And Set(hora_1,TimeValue(Now()))
+        OnSelect: =Set(Latitude_1,Text(Location.Latitude))And Set(Longitude_1,Text(Location.Longitude))And Set(Fecha_1,Today())//And Set(hora_1;TimeValue(Now()))
         Size: =24
         Text: ="Hora Salida"
         Width: =280
