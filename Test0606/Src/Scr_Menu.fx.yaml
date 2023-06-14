@@ -34,3 +34,12 @@ Scr_Menu As screen:
         Y: =201
         ZIndex: =4
 
+    Image1_2 As image:
+        Height: =238
+        Image: =salida
+        OnSelect: =Exit()
+        Width: =206
+        X: =217
+        Y: =581
+        ZIndex: =5
+
