@@ -37,7 +37,8 @@ Scr_Fichaje As screen:
     Label5_1 As label:
         Height: =108
         Size: =21
-        Text: =hora_1
+        Text: |-
+            =Text(hora_1,"h:mm am/pm")
         Width: =240
         X: =200
         Y: =325
@@ -77,17 +78,20 @@ Scr_Fichaje As screen:
                 Today()
             ) And Set(
                 hora_1,
-                Text( Now(), DateTimeFormat.LongTime24 )
+                TimeValue(
+                    Now(),
+                    "es-MX"
+                )
             ) And Set(
                 Tiempo_Tardanza,
-                
-                 Text(
+                Minute( hora_1 - TimeValue(
                     LookUp(
                         Tabla2,
                         Empresas = "ULN Bellavista",
                         'Horario Entrada'
                     ),
-                    "hh:mm am/pm")
+                    "es-MX"
+                ))
             )/*;;
             Patch(
                 Tabla1;
