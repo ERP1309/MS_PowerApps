@@ -38,7 +38,7 @@ Scr_Fichaje As screen:
         Height: =108
         Size: =21
         Text: |-
-            =Text(hora_1,"h:mm am/pm")
+            =Text(hora_1,"h:mm")
         Width: =240
         X: =200
         Y: =325
@@ -81,7 +81,7 @@ Scr_Fichaje As screen:
                 TimeValue(
                     Text(
                         Now(),
-                        "h:mm am/pm"
+                        "h:mm"
                     ),
                     "es-MX"
                 )
@@ -93,24 +93,24 @@ Scr_Fichaje As screen:
                             Text(
                                 LookUp(
                                     Tabla2,
-                                    Empresas = "ULN Bellavista",
+                                    Empresas = Dd_empresa.Selected.Empresas,
                                     'Horario Entrada'
                                 ),
-                                "h:mm am/pm"
+                                "h:mm"
                             ),
                             Text(
                                 LookUp(
                                     Tabla2,
-                                    Empresas = "ULN Bellavista",
+                                    Empresas = Dd_empresa.Selected.Empresas,
                                     'Tiempo de Tolerancia (Min.)'
                                 ),
-                                "h:mm am/pm"
+                                "h:mm"
                             ),
                             TimeUnit.Minutes
                         ),
                         Text(
                             hora_1,
-                            "h:mm am/pm"
+                            "h:mm"
                         ),
                         TimeUnit.Minutes
                     ) > 0,
@@ -118,14 +118,14 @@ Scr_Fichaje As screen:
                         Text(
                             LookUp(
                                 Tabla2,
-                                Empresas = "ULN Bellavista",
+                                Empresas = Dd_empresa.Selected.Empresas,
                                 'Horario Entrada'
                             ),
-                            "h:mm am/pm"
+                            "h:mm"
                         ),
                         Text(
                             hora_1,
-                            "h:mm am/pm"
+                            "h:mm"
                         ),
                         TimeUnit.Minutes
                     ),
@@ -184,7 +184,7 @@ Scr_Fichaje As screen:
                         Text(
                             LookUp(
                                 Tabla2,
-                                Empresas = "ULN Bellavista",
+                                Empresas = Dd_empresa.Selected.Empresas,
                                 'Horario Salida'
                             ),
                             "h:mm am/pm"
@@ -195,7 +195,7 @@ Scr_Fichaje As screen:
                         Text(
                             LookUp(
                                 Tabla2,
-                                Empresas = "ULN Bellavista",
+                                Empresas = Dd_empresa.Selected.Empresas,
                                 'Horario Salida'
                             ),
                             "h:mm am/pm"
@@ -256,4 +256,13 @@ Scr_Fichaje As screen:
         X: =40
         Y: =205
         ZIndex: =15
+
+    Dd_empresa As dropdown:
+        Height: =70
+        Items: =Tabla2
+        Size: =21
+        Width: =575
+        X: =32
+        Y: =120
+        ZIndex: =16
 
