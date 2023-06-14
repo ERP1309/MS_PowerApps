@@ -81,12 +81,13 @@ Scr_Fichaje As screen:
             ) And Set(
                 Tiempo_Tardanza,
                 
-                
+                Text(
                     LookUp(
                         Tabla2,
                         Empresas = "ULN Bellavista",
                         'Horario Entrada'
-                    )
+                    ),
+                    "hh:mm am/pm")
             )/*;;
             Patch(
                 Tabla1;
