@@ -145,7 +145,7 @@ Scr_Fichaje As screen:
                 {'Tipo De Marcación': "Entrada"},
                 {'Hora Marcación': hora_1},
                 {Tardanza: Tiempo_Tardanza}
-            )
+            );Reset(Dd_empresa)And Reset(UserLog_2) 
         Size: =24
         Text: ="Hora Ingreso"
         Width: =280
