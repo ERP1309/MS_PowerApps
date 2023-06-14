@@ -139,6 +139,7 @@ Scr_Fichaje As screen:
                 {'Usuario Marcación': UserBD.'Id. Usuario'},
                 {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
                 {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {'Empresa Asiganada': Dd_empresa.Selected.Empresas},
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
                 {'Tipo De Marcación': "Entrada"},
@@ -216,6 +217,7 @@ Scr_Fichaje As screen:
                 {'Usuario Marcación': UserBD.'Id. Usuario'},
                 {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
                 {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {'Empresa Asiganada':Dd_empresa.Selected.Empresas},
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
                 {'Tipo De Marcación': "Salida"},
@@ -228,34 +230,6 @@ Scr_Fichaje As screen:
         X: =336
         Y: =404
         ZIndex: =14
-
-    Label1 As label:
-        Height: =70
-        Size: =21
-        Text: |-
-            =DateDiff(DateAdd(
-                Text(
-                    LookUp(
-                        Tabla2,
-                        Empresas = "ULN Bellavista",
-                        'Horario Entrada'
-                    ),
-                    "h:mm am/pm"
-                ),
-                Text(
-                    LookUp(
-                        Tabla2,
-                        Empresas = "ULN Bellavista",
-                        'Tiempo de Tolerancia (Min.)'
-                    ),
-                    "h:mm am/pm"
-                ),
-                TimeUnit.Minutes
-            ),Text(hora_1,"h:mm am/pm"),TimeUnit.Minutes)
-        Width: =560
-        X: =40
-        Y: =205
-        ZIndex: =15
 
     Dd_empresa As dropdown:
         Height: =70

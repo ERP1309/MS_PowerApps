@@ -7,7 +7,7 @@ Scr_Menu As screen:
 
     "Gll_menu As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =255
+        Height: =257
         Items: =Navegacion
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -15,8 +15,8 @@ Scr_Menu As screen:
         TemplateFill: =If(ThisItem.Título=item_menu.Título,RGBA(184, 184, 184, 1),RGBA(240, 240, 240, 1))
         TemplatePadding: =0
         TemplateSize: =63
-        Width: =359
-        Y: =90
+        Width: =If(reducir,80,350)
+        Y: =96
         ZIndex: =1
 
         Image3 As image:
@@ -50,7 +50,11 @@ Scr_Menu As screen:
     Ico_menu As icon.Hamburger:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Hamburger
-        OnSelect: =Set(reducir,!reducir)
+        OnSelect: |-
+            =Set(
+                reducir,
+                !reducir
+            )
         X: =14
         Y: =15
         ZIndex: =3
