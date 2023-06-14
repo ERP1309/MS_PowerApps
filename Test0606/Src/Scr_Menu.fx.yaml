@@ -1,13 +1,13 @@
-Screen6 As screen:
+Scr_Menu As screen:
 
-    Rectangle2 As rectangle:
+    Rec_menu As rectangle:
         Height: =95
         Width: =640
         ZIndex: =1
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+    "Gll_menu As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =268
+        Height: =255
         Items: =Navegacion
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -15,7 +15,7 @@ Screen6 As screen:
         TemplateFill: =If(ThisItem.Título=item_menu.Título,RGBA(184, 184, 184, 1),RGBA(240, 240, 240, 1))
         TemplatePadding: =0
         TemplateSize: =63
-        Width: =If(reducir,70,316)
+        Width: =359
         Y: =90
         ZIndex: =1
 
@@ -47,7 +47,7 @@ Screen6 As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
-    Icon1 As icon.Hamburger:
+    Ico_menu As icon.Hamburger:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Hamburger
         OnSelect: =Set(reducir,!reducir)

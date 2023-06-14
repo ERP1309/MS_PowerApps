@@ -1,4 +1,4 @@
-Screen1 As screen:
+Scr_inicio As screen:
     BackgroundImage: ='logo ULN'
     Fill: =RGBA(39, 113, 194, 1)
     OnVisible: =
@@ -7,7 +7,7 @@ Screen1 As screen:
         AutoStart: =true
         Duration: =1000
         Height: =70
-        OnTimerEnd: =Navigate(Screen5,ScreenTransition.Cover)
+        OnTimerEnd: =Navigate(Scr_Log,ScreenTransition.Cover)
         Visible: =false
         Width: =176
         X: =56

@@ -131,10 +131,10 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Screen5",
-    "Screen3",
-    "Screen2",
-    "Screen6"
+    "Scr_inicio",
+    "Scr_Log",
+    "Scr_Bienvenido",
+    "Scr_Fichaje",
+    "Scr_Menu"
   ]
 }

@@ -1,4 +1,4 @@
-Screen3 As screen:
+Scr_Bienvenido As screen:
     Fill: =RGBA(255, 255, 255, 1)
 
     Image2 As image:
@@ -27,7 +27,7 @@ Screen3 As screen:
         AutoStart: =true    
         Duration: =2000
         Height: =70
-        OnTimerEnd: =Navigate(Screen2)
+        OnTimerEnd: =Navigate(Scr_Fichaje)
         Visible: =false
         Width: =13
         X: =40

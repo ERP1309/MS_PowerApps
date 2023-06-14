@@ -1,4 +1,4 @@
-Screen5 As screen:
+Scr_Log As screen:
 
     Rectangle1 As rectangle:
         Height: =120
@@ -58,7 +58,7 @@ Screen5 As screen:
 
     Button3 As button:
         Height: =70
-        OnSelect: =If(If(IsBlank(LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text))), false , true ) And UserBD.Clave=ClvLog_2.Text,Navigate(Screen3,ScreenTransition.Cover)&Reset(Latitude1)&Reset(Longitud1)&Reset(UserLog_2)&Reset(ClvLog_2),Error("Usuario o Contraseña son incorrectos")&Reset(ClvLog_2)&Reset(Latitude1)&Reset(Longitud1))
+        OnSelect: =If(If(IsBlank(LookUp(Tabla3,'Id. Usuario'=Upper(UserLog_2.Text))), false , true ) And UserBD.Clave=ClvLog_2.Text,Navigate(Scr_Bienvenido,ScreenTransition.Cover);Reset(UserLog_2)&Reset(ClvLog_2),Error("Usuario o Contraseña son incorrectos")&Reset(ClvLog_2))
         Size: =24
         Text: ="Ingresar"
         Width: =280
