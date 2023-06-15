@@ -5,7 +5,7 @@ Scr_Menu As screen:
         Width: =640
         ZIndex: =1
 
-    Label1 As label:
+    Lbl_Menu_principal As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Height: =70
@@ -16,7 +16,7 @@ Scr_Menu As screen:
         Y: =10
         ZIndex: =2
 
-    Image1 As image:
+    Ic_Fichaje As image:
         Height: =238
         Image: ='reloj-de-pared'
         OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover)
@@ -25,7 +25,7 @@ Scr_Menu As screen:
         Y: =201
         ZIndex: =3
 
-    Image1_1 As image:
+    Ic_Historico As image:
         Height: =238
         Image: ='boton-de-reloj-historico'
         OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)
@@ -34,7 +34,7 @@ Scr_Menu As screen:
         Y: =201
         ZIndex: =4
 
-    Image1_2 As image:
+    Ic_Salir As image:
         Height: =238
         Image: =salida
         OnSelect: =Exit()
@@ -42,4 +42,37 @@ Scr_Menu As screen:
         X: =217
         Y: =581
         ZIndex: =5
+
+    Lbl_Menu_principal_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Fichaje"
+        Width: =232
+        X: =40
+        Y: =439
+        ZIndex: =6
+
+    Lbl_Menu_principal_2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Historial de Fichaje"
+        Width: =232
+        X: =346
+        Y: =439
+        ZIndex: =7
+
+    Lbl_Menu_principal_3 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Salir"
+        Width: =232
+        X: =177
+        Y: =840
+        ZIndex: =8
 

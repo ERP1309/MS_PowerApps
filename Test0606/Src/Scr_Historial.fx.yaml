@@ -1,2 +1,123 @@
 Scr_Historial As screen:
 
+    Rec_menu_1 As rectangle:
+        Height: =95
+        Width: =640
+        ZIndex: =1
+
+    Lbl_Historial_fichaje As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =74
+        Size: =40
+        Text: ="Historial de Marcación"
+        Width: =640
+        Y: =10
+        ZIndex: =2
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =746
+        Items: =Filter(Tabla1,'Usuario Marcación'=UserBD.'Id. Usuario')
+        Size: =21
+        Width: =582
+        X: =29
+        Y: =343
+        ZIndex: =3
+
+        "'Hora Marcación_Columna1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Hora Marcación"
+            FieldName: ="Hora_x0020_Marcación"
+            FieldVariantName: ="textualColumn"
+            Height: =746
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Hora Marcación'
+            Width: =178
+            X: =7
+            Y: =0
+            ZIndex: =1
+
+        "'Minutos Adicionales_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Minutos Adicionales"
+            FieldName: ="Minutos_x0020_Adicionales"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Minutos Adicionales'
+            Width: =100
+            X: =429
+            Y: =0
+            ZIndex: =2
+
+        Tardanza_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Tardanza"
+            FieldName: ="Tardanza"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Tardanza
+            Width: =100
+            X: =218
+            Y: =0
+            ZIndex: =4
+
+        "'Fecha Marcación_Columna1' As dataTableColumn.textualColumn":
+            AutoWidth: =true
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Fecha Marcación"
+            FieldName: ="Fecha_x0020_Marcación"
+            FieldVariantName: ="textualColumn"
+            Height: =746
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.'Fecha Marcación'
+            Width: =300
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'Tipo De Marcación_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Tipo De Marcación"
+            FieldName: ="Tipo_x0020_De_x0020_Marcación"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Tipo De Marcación'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'Empresa Asiganada_Columna1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Empresa Asiganada"
+            FieldName: ="Empresa_x0020_Asiganada"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Empresa Asiganada'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+    Icon5 As icon.BackArrow:
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)
+        X: =29
+        Y: =253
+        ZIndex: =5
+

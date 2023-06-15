@@ -414,6 +414,162 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 3
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -514,19 +670,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Fichaje.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Fichaje.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1"
+                "type": "Scr_Menu.Ic_Fichaje"
               }
             }
           ],
@@ -544,19 +700,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1.TabIndex"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Fichaje.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1.TabIndex",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Fichaje.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1"
+                "type": "Scr_Menu.Ic_Fichaje"
               }
             }
           ],
@@ -574,19 +730,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Historico.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Historico.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1_1"
+                "type": "Scr_Menu.Ic_Historico"
               }
             }
           ],
@@ -604,19 +760,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1_1.TabIndex"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Historico.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1_1.TabIndex",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Historico.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1_1"
+                "type": "Scr_Menu.Ic_Historico"
               }
             }
           ],
@@ -634,19 +790,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1_2.AccessibleLabel"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Salir.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1_2.AccessibleLabel",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Salir.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1_2"
+                "type": "Scr_Menu.Ic_Salir"
               }
             }
           ],
@@ -664,19 +820,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Scr_Menu.Image1_2.TabIndex"
+                  "fullyQualifiedName": "Scr_Menu.Ic_Salir.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Scr_Menu.Image1_2.TabIndex",
+                  "fullyQualifiedName": "Scr_Menu.Ic_Salir.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Scr_Menu",
-                "type": "Scr_Menu.Image1_2"
+                "type": "Scr_Menu.Ic_Salir"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr_Historial.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr_Historial.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scr_Historial",
+                "type": "Scr_Historial.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Scr_Historial.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Scr_Historial.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scr_Historial",
+                "type": "Scr_Historial.Icon5"
               }
             }
           ],
