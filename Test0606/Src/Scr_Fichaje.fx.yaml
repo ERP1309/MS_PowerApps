@@ -143,6 +143,7 @@ Scr_Fichaje As screen:
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
                 {'Tipo De Marcación': "Entrada"},
+                {'Fecha Marcación':Fecha_1},
                 {'Hora Marcación': hora_1},
                 {Tardanza: Tiempo_Tardanza}
             );Navigate(Scr_Menu,ScreenTransition.Cover)
@@ -221,6 +222,7 @@ Scr_Fichaje As screen:
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
                 {'Tipo De Marcación': "Salida"},
+                {'Fecha Marcación':Fecha_1},
                 {'Hora Marcación': hora_1},
                 {'Minutos Adicionales':Min_Adicionales}
             );Navigate(Scr_Menu,ScreenTransition.Cover)
