@@ -21,7 +21,7 @@ Scr_Historial As screen:
         Fill: =RGBA(0, 0, 0, 0)
         HeadingSize: =21
         Height: =746
-        Items: =Filter(Tabla1,'Usuario Marcación'=UserBD.'Id. Usuario')
+        Items: = Filter(Tabla1,'Usuario Marcación'=UserBD.'Id. Usuario',Dd_Fech_Ini<=DateValue('Fecha Marcación') And Dd_Fech_Fin>=DateValue('Fecha Marcación'),Dd_empresa_1.Selected.Empresas='Empresa Asiganada')
         Size: =21
         Width: =582
         X: =29
@@ -117,7 +117,62 @@ Scr_Historial As screen:
     Icon5 As icon.BackArrow:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)
-        X: =29
-        Y: =253
+        X: =547
+        Y: =258
         ZIndex: =5
+
+    Label1 As label:
+        Height: =56
+        Size: =21
+        Text: ="Fecha Inicial"
+        Width: =177
+        X: =18
+        Y: =138
+        ZIndex: =6
+
+    Label1_1 As label:
+        Height: =56
+        Size: =21
+        Text: ="Fecha Final"
+        Width: =177
+        X: =18
+        Y: =194
+        ZIndex: =7
+
+    Dd_Fech_Ini As datepicker:
+        Height: =56
+        Language: ="es-Mx"
+        Size: =24
+        Width: =239
+        X: =220
+        Y: =138
+        ZIndex: =8
+
+    Dd_Fech_Fin As datepicker:
+        Height: =56
+        Language: ="es-Mx"
+        Size: =24
+        Width: =239
+        X: =220
+        Y: =194
+        ZIndex: =9
+
+    Dd_empresa_1 As dropdown:
+        Height: =61
+        Items: =Tabla2
+        Size: =21
+        Width: =239
+        X: =220
+        Y: =261
+        ZIndex: =10
+
+    Label2_1 As label:
+        Height: =72
+        Size: =21
+        Text: |-
+            ="Empresa Asignada: "
+        Width: =176
+        X: =18
+        Y: =250
+        ZIndex: =11
 
