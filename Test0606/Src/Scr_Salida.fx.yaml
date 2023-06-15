@@ -12,17 +12,6 @@ Scr_Salida As screen:
         Y: =252
         ZIndex: =3
 
-    Timer1_1 As timer:
-        AutoStart: =true    
-        Duration: =2000
-        Height: =70
-        OnTimerEnd: =Navigate(Scr_Menu)
-        Visible: =false
-        Width: =13
-        X: =40
-        Y: =966
-        ZIndex: =4
-
     Image4_1 As image:
         Height: =320
         Image: =enchufe
