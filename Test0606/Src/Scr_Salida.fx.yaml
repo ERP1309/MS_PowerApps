@@ -6,7 +6,7 @@ Scr_Salida As screen:
         Height: =176
         Size: =40
         Text: |-
-            ="Cerrando Sesión de: " & UsuariosdeOffice365.MyProfile().DisplayName
+            ="Cerrando Sesión de: " & UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName
         Width: =551
         X: =40
         Y: =252
@@ -21,7 +21,6 @@ Scr_Salida As screen:
         ZIndex: =5
 
     Timer3 As timer:
-        AutoPause: =false
         AutoStart: =true
         DisplayMode: =DisplayMode.Disabled
         Duration: =2000
