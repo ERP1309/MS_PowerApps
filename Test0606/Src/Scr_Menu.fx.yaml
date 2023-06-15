@@ -37,7 +37,7 @@ Scr_Menu As screen:
     Ic_Salir As image:
         Height: =238
         Image: =salida
-        OnSelect: =Exit()
+        OnSelect: =Navigate(Scr_Salida,ScreenTransition.Cover)
         Width: =206
         X: =217
         Y: =581

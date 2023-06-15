@@ -136,6 +136,7 @@
     "Scr_Bienvenido",
     "Scr_Menu",
     "Scr_Fichaje",
-    "Scr_Historial"
+    "Scr_Historial",
+    "Scr_Salida"
   ]
 }
