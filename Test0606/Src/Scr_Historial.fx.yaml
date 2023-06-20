@@ -160,7 +160,7 @@ Scr_Historial As screen:
         ZIndex: =9
 
     Dd_empresa_1 As dropdown:
-        Default: ="2"
+        Default: =""
         Height: =61
         Items: =Tabla2
         Size: =21

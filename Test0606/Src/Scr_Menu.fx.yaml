@@ -21,7 +21,7 @@ Scr_Menu As screen:
         Image: ='reloj-de-pared'
         OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover)
         Width: =206
-        X: =40
+        X: =22
         Y: =201
         ZIndex: =3
 

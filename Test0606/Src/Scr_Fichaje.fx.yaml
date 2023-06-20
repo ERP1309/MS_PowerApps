@@ -25,7 +25,7 @@ Scr_Fichaje As screen:
         ZIndex: =8
         Zoom: =false
 
-    Label5 As label:
+    Lbl_Fecha_Marc As label:
         Height: =83
         Size: =21
         Text: =Text(Fecha_1,"dd/mm/yyyy")
@@ -34,7 +34,7 @@ Scr_Fichaje As screen:
         Y: =275
         ZIndex: =9
 
-    Label5_1 As label:
+    LBl_Hora_Marc As label:
         Height: =108
         Size: =21
         Text: |-
@@ -137,8 +137,8 @@ Scr_Fichaje As screen:
                 Defaults(Tabla1),
                 {Guid:Text(GUID())},
                 {'Usuario Marcación': UserBD.'Id. Usuario'},
-                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
-                {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {'Nombre Completo': UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName},
+                {'E-Mail': UsuariosdeOffice365.UserProfile(UserBD.Correo).Mail},
                 {'Empresa Asiganada': Dd_empresa.Selected.Empresas},
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
@@ -216,8 +216,8 @@ Scr_Fichaje As screen:
                 Defaults(Tabla1),
                 {Guid: Text(GUID())},
                 {'Usuario Marcación': UserBD.'Id. Usuario'},
-                {'Nombre Completo': UsuariosdeOffice365.MyProfile().DisplayName},
-                {'E-Mail': UsuariosdeOffice365.MyProfile().Mail},
+                {'Nombre Completo': UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName},
+                {'E-Mail':UsuariosdeOffice365.UserProfile(UserBD.Correo).Mail},
                 {'Empresa Asiganada':Dd_empresa.Selected.Empresas},
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
