@@ -140,6 +140,7 @@ Scr_Historial As screen:
         ZIndex: =7
 
     Dd_Fech_Ini As datepicker:
+        DefaultDate: =
         Height: =56
         Language: ="es-Mx"
         Size: =24
@@ -149,6 +150,7 @@ Scr_Historial As screen:
         ZIndex: =8
 
     Dd_Fech_Fin As datepicker:
+        DefaultDate: =
         Height: =56
         Language: ="es-Mx"
         Size: =24
@@ -158,6 +160,7 @@ Scr_Historial As screen:
         ZIndex: =9
 
     Dd_empresa_1 As dropdown:
+        Default: ="2"
         Height: =61
         Items: =Tabla2
         Size: =21
