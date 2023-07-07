@@ -1,4 +1,6 @@
 Scr_Historial As screen:
+    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
+    ImagePosition: =ImagePosition.Fill
 
     Rec_menu_1 As rectangle:
         Height: =95
@@ -21,7 +23,44 @@ Scr_Historial As screen:
         Fill: =RGBA(0, 0, 0, 0)
         HeadingSize: =21
         Height: =746
-        Items: = Filter(Tabla1,'Usuario Marcación'=UserBD.'Id. Usuario',Dd_Fech_Ini<=DateValue('Fecha Marcación') And Dd_Fech_Fin>=DateValue('Fecha Marcación'),Dd_empresa_1.Selected.Empresas='Empresa Asiganada')
+        Items: |-
+            =If(
+                !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Dd_empresa_1),
+                (Filter(
+                    Tabla1,
+                    'Usuario Marcación' = UserBD.'Id. Usuario',
+                    Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                )),
+                (If(
+                    !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Dd_empresa_1),
+                    (Filter(
+                        Tabla1,
+                        'Usuario Marcación' = UserBD.'Id. Usuario',
+                        Dd_Fech_Ini <= DateValue('Fecha Marcación')
+                    )),
+                    (If(
+                        IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Dd_empresa_1),
+                        (Filter(
+                            Tabla1,
+                            'Usuario Marcación' = UserBD.'Id. Usuario'
+                        )),
+                        (If(
+                            IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Dd_empresa_1),
+                            (Filter(
+                                Tabla1,
+                                'Usuario Marcación' = UserBD.'Id. Usuario',
+                                Dd_empresa_1.Selected.Empresas = 'Empresa Asiganada'
+                            )),
+                            (Filter(
+                                Tabla1,
+                                'Usuario Marcación' = UserBD.'Id. Usuario',
+                                Dd_empresa_1.Selected.Empresas = 'Empresa Asiganada',
+                                Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                            ))
+                        ) )
+                    ) )
+                ) )
+            )
         Size: =21
         Width: =582
         X: =29
@@ -72,18 +111,19 @@ Scr_Historial As screen:
             ZIndex: =4
 
         "'Fecha Marcación_Columna1' As dataTableColumn.textualColumn":
-            AutoWidth: =true
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Fecha Marcación"
             FieldName: ="Fecha_x0020_Marcación"
             FieldVariantName: ="textualColumn"
-            Height: =746
+            Height: =720
+            IsHyperlink: =false
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.'Fecha Marcación'
-            Width: =300
+            Width: =193
             X: =0
-            Y: =0
+            Y: =12
             ZIndex: =5
 
         "'Tipo De Marcación_Columna1' As dataTableColumn.textualColumn":
@@ -116,21 +156,24 @@ Scr_Historial As screen:
 
     Icon5 As icon.BackArrow:
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)
+        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Dd_empresa_1)
+        Tooltip: ="Atrás"
         X: =547
         Y: =258
         ZIndex: =5
 
     Label1 As label:
+        FontWeight: =FontWeight.Bold
         Height: =56
         Size: =21
         Text: ="Fecha Inicial"
-        Width: =177
+        Width: =195
         X: =18
         Y: =138
         ZIndex: =6
 
     Label1_1 As label:
+        FontWeight: =FontWeight.Bold
         Height: =56
         Size: =21
         Text: ="Fecha Final"
@@ -145,7 +188,7 @@ Scr_Historial As screen:
         Language: ="es-Mx"
         Size: =24
         Width: =239
-        X: =220
+        X: =238
         Y: =138
         ZIndex: =8
 
@@ -155,7 +198,7 @@ Scr_Historial As screen:
         Language: ="es-Mx"
         Size: =24
         Width: =239
-        X: =220
+        X: =238
         Y: =194
         ZIndex: =9
 
@@ -165,11 +208,12 @@ Scr_Historial As screen:
         Items: =Tabla2
         Size: =21
         Width: =239
-        X: =220
+        X: =238
         Y: =261
         ZIndex: =10
 
     Label2_1 As label:
+        FontWeight: =FontWeight.Bold
         Height: =72
         Size: =21
         Text: |-

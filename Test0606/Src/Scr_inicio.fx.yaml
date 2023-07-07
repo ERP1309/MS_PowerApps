@@ -1,6 +1,7 @@
 Scr_inicio As screen:
-    BackgroundImage: ='logo ULN'
+    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
     Fill: =RGBA(39, 113, 194, 1)
+    ImagePosition: =ImagePosition.Fill
     OnVisible: =
 
     Timer2 As timer:
@@ -13,4 +14,16 @@ Scr_inicio As screen:
         X: =56
         Y: =1032
         ZIndex: =1
+
+    Image3 As image:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =6
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =320
+        Image: ='logo ULN'
+        Width: =640
+        Y: =399
+        ZIndex: =2
 

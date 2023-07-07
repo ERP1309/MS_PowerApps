@@ -1,4 +1,6 @@
 Scr_Menu As screen:
+    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
+    ImagePosition: =ImagePosition.Fill
 
     Rec_menu As rectangle:
         Height: =95
@@ -19,7 +21,7 @@ Scr_Menu As screen:
     Ic_Fichaje As image:
         Height: =238
         Image: ='reloj-de-pared'
-        OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover)
+        OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank())
         Width: =206
         X: =22
         Y: =201
@@ -28,7 +30,7 @@ Scr_Menu As screen:
     Ic_Historico As image:
         Height: =238
         Image: ='boton-de-reloj-historico'
-        OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)
+        OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Dd_empresa_1)
         Width: =206
         X: =372
         Y: =201

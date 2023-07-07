@@ -1,4 +1,6 @@
 Scr_Log As screen:
+    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
+    ImagePosition: =ImagePosition.Fill
 
     Rectangle1 As rectangle:
         Height: =120
@@ -15,22 +17,26 @@ Scr_Log As screen:
         ZIndex: =2
 
     UserLog_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(0, 13, 75, 1)
+        FontWeight: =FontWeight.Bold
         Height: =63
-        Size: =21
+        Size: =23
         Text: |-
             ="Usuario :"
-        Width: =146
-        X: =40
-        Y: =193
+        Width: =157
+        Y: =180
         ZIndex: =3
 
     ClvLog_1 As label:
+        Color: =RGBA(0, 13, 75, 1)
+        FontWeight: =FontWeight.Bold
         Height: =63
-        Size: =21
+        Size: =25
         Text: |-
             ="Clave :"
-        Width: =146
-        X: =40
+        Width: =185
         Y: =264
         ZIndex: =4
 

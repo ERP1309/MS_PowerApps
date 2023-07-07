@@ -1,4 +1,6 @@
 Scr_Fichaje As screen:
+    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
+    ImagePosition: =ImagePosition.Fill
 
     "Map1 As 'Mapa (versión preliminar)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
@@ -45,22 +47,24 @@ Scr_Fichaje As screen:
         ZIndex: =10
 
     Label10 As label:
+        FontWeight: =FontWeight.Bold
         Height: =63
-        Size: =21
+        Size: =25
         Text: |-
             ="Fecha:"
-        Width: =200
-        X: =40
+        Width: =217
+        X: =23
         Y: =281
         ZIndex: =11
 
     Label10_1 As label:
+        FontWeight: =FontWeight.Bold
         Height: =60
-        Size: =21
+        Size: =25
         Text: |-
             ="Hora:"
-        Width: =176
-        X: =40
+        Width: =193
+        X: =23
         Y: =344
         ZIndex: =12
 
@@ -135,7 +139,7 @@ Scr_Fichaje As screen:
             Patch(
                 Tabla1,
                 Defaults(Tabla1),
-                {Guid:Text(GUID())},
+                {Guid: Text(GUID())},
                 {'Usuario Marcación': UserBD.'Id. Usuario'},
                 {'Nombre Completo': UsuariosdeOffice365.UserProfile(UserBD.Correo).DisplayName},
                 {'E-Mail': UsuariosdeOffice365.UserProfile(UserBD.Correo).Mail},
@@ -143,10 +147,19 @@ Scr_Fichaje As screen:
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
                 {'Tipo De Marcación': "Entrada"},
-                {'Fecha Marcación':Text(Fecha_1,"dd/mm/yyyy")},
+                {
+                    'Fecha Marcación': Text(
+                        Fecha_1,
+                        "dd/mm/yyyy"
+                    )
+                },
                 {'Hora Marcación': hora_1},
                 {Tardanza: Tiempo_Tardanza}
-            );Navigate(Scr_Menu,ScreenTransition.Cover)
+            );
+            Navigate(
+                Scr_Menu,
+                ScreenTransition.Cover
+            )
         Size: =24
         Text: ="Registrar Ingreso"
         Width: =280
@@ -243,12 +256,13 @@ Scr_Fichaje As screen:
         ZIndex: =16
 
     Label2 As label:
+        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
         Text: |-
-            ="Empresa Asignada: "
-        Width: =266
-        X: =40
+            ="Empresa Asignada:"
+        Width: =282
+        X: =23
         Y: =120
         ZIndex: =17
 

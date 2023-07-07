@@ -1,7 +1,7 @@
 {
-  "14c141b5-4deb-41ad-a3cc-0bae75a9c3f1": {
+  "23bead8e-df17-4df3-9a07-cdb752654454": {
     "connectionRef": {
-      "displayName": "Spatial Services",
+      "displayName": "Servicios espaciales",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
     },
@@ -11,7 +11,7 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "14c141b5-4deb-41ad-a3cc-0bae75a9c3f1"
+    "id": "23bead8e-df17-4df3-9a07-cdb752654454"
   },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
