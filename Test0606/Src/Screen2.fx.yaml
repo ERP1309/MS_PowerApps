@@ -24,7 +24,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Check
-        OnSelect: =SubmitForm(EditForm1)
+        OnSelect: =SubmitForm(From_reg)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
@@ -45,9 +45,9 @@
         X: =IconCancel1.X + IconCancel1.Width
         ZIndex: =4
 
-    EditForm1 As form:
+    From_reg As form:
         DataSource: =Tabla2
-        Height: =Parent.Height - EditForm1.Y
+        Height: =Parent.Height - From_reg.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar2.Height
         ZIndex: =5

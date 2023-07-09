@@ -1492,19 +1492,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Ubicación - Longitude_DataCard1'.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Ubicación - Longitude_DataCard1'.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Ubicación - Longitude_DataCard1'.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Ubicación - Longitude_DataCard1'.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Ubicación - Longitude_DataCard1'.DataCardValue8"
+                "type": "Screen2.From_reg.'Ubicación - Longitude_DataCard1'.DataCardValue8"
               }
             }
           ],
@@ -1522,19 +1522,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Ubicación - Latitude_DataCard1'.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Ubicación - Latitude_DataCard1'.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Ubicación - Latitude_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Ubicación - Latitude_DataCard1'.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Ubicación - Latitude_DataCard1'.DataCardValue7"
+                "type": "Screen2.From_reg.'Ubicación - Latitude_DataCard1'.DataCardValue7"
               }
             }
           ],
@@ -1552,19 +1552,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Tolerancia  de Distancia_DataCard1'.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Tolerancia  de Distancia_DataCard1'.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Tolerancia  de Distancia_DataCard1'.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Tolerancia  de Distancia_DataCard1'.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Tolerancia  de Distancia_DataCard1'.DataCardValue6"
+                "type": "Screen2.From_reg.'Tolerancia  de Distancia_DataCard1'.DataCardValue6"
               }
             }
           ],
@@ -1582,19 +1582,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5"
+                "type": "Screen2.From_reg.'Tiempo de Tolerancia (Min.)_DataCard1'.DataCardValue5"
               }
             }
           ],
@@ -1612,19 +1612,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Horario Salida_DataCard1'.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Horario Salida_DataCard1'.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Horario Salida_DataCard1'.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Horario Salida_DataCard1'.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Horario Salida_DataCard1'.DataCardValue4"
+                "type": "Screen2.From_reg.'Horario Salida_DataCard1'.DataCardValue4"
               }
             }
           ],
@@ -1642,19 +1642,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Horario Entrada_DataCard1'.DataCardValue3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.'Horario Entrada_DataCard1'.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.'Horario Entrada_DataCard1'.DataCardValue3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.'Horario Entrada_DataCard1'.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.'Horario Entrada_DataCard1'.DataCardValue3"
+                "type": "Screen2.From_reg.'Horario Entrada_DataCard1'.DataCardValue3"
               }
             }
           ],
@@ -1701,19 +1701,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.Id_DataCard1.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.Id_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.Id_DataCard1.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.Id_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.Id_DataCard1.DataCardValue1"
+                "type": "Screen2.From_reg.Id_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -1761,19 +1761,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.EditForm1.Empresas_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen2.From_reg.Empresas_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.EditForm1.Empresas_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen2.From_reg.Empresas_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen2",
-                "type": "Screen2.EditForm1.Empresas_DataCard1.DataCardValue2"
+                "type": "Screen2.From_reg.Empresas_DataCard1.DataCardValue2"
               }
             }
           ],
