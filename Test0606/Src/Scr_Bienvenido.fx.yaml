@@ -37,10 +37,10 @@ Scr_Bienvenido As screen:
         ZIndex: =4
 
     Image4 As image:
-        Height: =320
-        Image: =cargando
-        Width: =320
-        X: =160
-        Y: =583
+        Height: =438
+        Image: ='cargando-unscreen'
+        Width: =414
+        X: =108
+        Y: =549
         ZIndex: =5
 

@@ -13,7 +13,7 @@ Scr_Fichaje As screen:
         DefaultLongitude: =Longitude_1
         DefaultZoomLevel: =15
         DisplayMode: =DisplayMode.Edit
-        Height: =635
+        Height: =583
         InfoCards: ='Map.InfoCards'.None
         Items: =Location
         ItemsLatitudes: ="Latitude"
@@ -23,27 +23,27 @@ Scr_Fichaje As screen:
         Visible: =true
         Width: =640
         X: =0
-        Y: =500
+        Y: =552
         ZIndex: =8
         Zoom: =false
 
     Lbl_Fecha_Marc As label:
-        Height: =83
+        Height: =68
         Size: =21
         Text: =Text(Fecha_1,"dd/mm/yyyy")
-        Width: =240
+        Width: =193
         X: =200
-        Y: =275
+        Y: =298
         ZIndex: =9
 
     LBl_Hora_Marc As label:
-        Height: =108
+        Height: =54
         Size: =21
         Text: |-
             =Text(hora_1,"h:mm")
-        Width: =240
+        Width: =193
         X: =200
-        Y: =325
+        Y: =366
         ZIndex: =10
 
     Label10 As label:
@@ -52,20 +52,20 @@ Scr_Fichaje As screen:
         Size: =25
         Text: |-
             ="Fecha:"
-        Width: =217
+        Width: =138
         X: =23
-        Y: =281
+        Y: =298
         ZIndex: =11
 
     Label10_1 As label:
         FontWeight: =FontWeight.Bold
-        Height: =60
+        Height: =54
         Size: =25
         Text: |-
             ="Hora:"
-        Width: =193
+        Width: =119
         X: =23
-        Y: =344
+        Y: =366
         ZIndex: =12
 
     Button4 As button:
@@ -89,11 +89,38 @@ Scr_Fichaje As screen:
                     ),
                     "es-MX"
                 )
-            ) And Set(
-                Tiempo_Tardanza,
-                If(
-                    DateDiff(
-                        DateAdd(
+            ) And If(
+                Dd_Tip_marca.Selected.'Tipo Marcación' = "Entrada",
+                (Set(
+                    Tiempo_Tardanza,
+                    If(
+                        DateDiff(
+                            DateAdd(
+                                Text(
+                                    LookUp(
+                                        Tabla2,
+                                        Empresas = Dd_empresa.Selected.Empresas,
+                                        'Horario Entrada'
+                                    ),
+                                    "h:mm"
+                                ),
+                                Text(
+                                    LookUp(
+                                        Tabla2,
+                                        Empresas = Dd_empresa.Selected.Empresas,
+                                        'Tiempo de Tolerancia (Min.)'
+                                    ),
+                                    "h:mm"
+                                ),
+                                TimeUnit.Minutes
+                            ),
+                            Text(
+                                hora_1,
+                                "h:mm"
+                            ),
+                            TimeUnit.Minutes
+                        ) > 0,
+                        DateDiff(
                             Text(
                                 LookUp(
                                     Tabla2,
@@ -103,37 +130,52 @@ Scr_Fichaje As screen:
                                 "h:mm"
                             ),
                             Text(
-                                LookUp(
-                                    Tabla2,
-                                    Empresas = Dd_empresa.Selected.Empresas,
-                                    'Tiempo de Tolerancia (Min.)'
-                                ),
+                                hora_1,
                                 "h:mm"
                             ),
                             TimeUnit.Minutes
                         ),
-                        Text(
-                            hora_1,
-                            "h:mm"
-                        ),
-                        TimeUnit.Minutes
-                    ) > 0,
-                    DateDiff(
-                        Text(
-                            LookUp(
-                                Tabla2,
-                                Empresas = Dd_empresa.Selected.Empresas,
-                                'Horario Entrada'
+                        0
+                    )
+                )),
+                If(
+                    Dd_Tip_marca.Selected.'Tipo Marcación' = "Salida",
+                    Set(
+                        Min_Adicionales,
+                        If(
+                            DateDiff(
+                                Text(
+                                    hora_1,
+                                    "h:mm am/pm"
+                                ),
+                                Text(
+                                    LookUp(
+                                        Tabla2,
+                                        Empresas = Text(Dd_empresa.Selected.Empresas),
+                                        'Horario Salida'
+                                    ),
+                                    "h:mm am/pm"
+                                ),
+                                TimeUnit.Minutes
+                            ) < 0,
+                            DateDiff(
+                                Text(
+                                    LookUp(
+                                        Tabla2,
+                                        Empresas = Text(Dd_empresa.Selected.Empresas),
+                                        'Horario Salida'
+                                    ),
+                                    "h:mm am/pm"
+                                ),
+                                Text(
+                                    hora_1,
+                                    "h:mm am/pm"
+                                ),
+                                TimeUnit.Minutes
                             ),
-                            "h:mm"
-                        ),
-                        Text(
-                            hora_1,
-                            "h:mm"
-                        ),
-                        TimeUnit.Minutes
-                    ),
-                    0
+                            0
+                        )
+                    )
                 )
             );
             Patch(
@@ -146,15 +188,16 @@ Scr_Fichaje As screen:
                 {'Empresa Asiganada': Dd_empresa.Selected.Empresas},
                 {Latitude: Latitude_1},
                 {Longitude: Longitude_1},
-                {'Tipo De Marcación': "Entrada"},
-                {
-                    'Fecha Marcación': Text(
+                {'Tipo De Marcación': Dd_Tip_marca.Selected.'Tipo Marcación'},
+                {'Fecha Marcación': Text(
                         Fecha_1,
                         "dd/mm/yyyy"
                     )
                 },
                 {'Hora Marcación': hora_1},
-                {Tardanza: Tiempo_Tardanza}
+                {Tardanza: Tiempo_Tardanza},
+                {'Minutos Adicionales':Min_Adicionales}
+            
             );
             Navigate(
                 Scr_Menu,
@@ -164,7 +207,7 @@ Scr_Fichaje As screen:
         Text: ="Registrar Ingreso"
         Width: =280
         X: =40
-        Y: =404
+        Y: =440
         ZIndex: =13
 
     Button4_1 As button:
@@ -243,7 +286,7 @@ Scr_Fichaje As screen:
         Text: ="Registrar Salida"
         Width: =280
         X: =336
-        Y: =404
+        Y: =440
         ZIndex: =14
 
     Dd_empresa As dropdown:
@@ -265,4 +308,24 @@ Scr_Fichaje As screen:
         X: =23
         Y: =120
         ZIndex: =17
+
+    Dd_Tip_marca As dropdown:
+        Height: =70
+        Items: =Tabla4
+        Size: =21
+        Width: =299
+        X: =305
+        Y: =214
+        ZIndex: =18
+
+    Label2_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Tipo Marcación:"
+        Width: =282
+        X: =23
+        Y: =214
+        ZIndex: =19
 

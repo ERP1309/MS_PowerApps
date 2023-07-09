@@ -1,0 +1,21 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-03-21T17:10:23.7160000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "Id_x002e__x0020_Tipo_x0020_Marcación": "Id. Tipo Marcación",
+      "Tipo_x0020_Marcación": "Tipo Marcación"
+    },
+    "DatasetName": "b!dgTpmUhB7Ey1IAjcqp4gdYIzDk91tCdEmruaOEF9PH3X8hQFWAENSYNvVwGujtH4.01GCIPK55TA55LC6M4DFEYJLZ6UW7UOPZ4",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Tabla4",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

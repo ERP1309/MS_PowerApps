@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crcb6_diarioinvfises",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crcb6_diarioinvfis",
+    "Name": "DiarioInvFis",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "crcb6_diarioinvfis_Annotations": "Notas",
+      "crcb6_diarioinvfis_AsyncOperations": "Trabajos del sistema",
+      "crcb6_diarioinvfis_BulkDeleteFailures": "Errores de eliminación en masa",
+      "crcb6_diarioinvfis_DuplicateBaseRecord": "Registros duplicados (crcb6_diarioinvfis_DuplicateBaseRecord)",
+      "crcb6_diarioinvfis_DuplicateMatchingRecord": "Registros duplicados (crcb6_diarioinvfis_DuplicateMatchingRecord)",
+      "crcb6_diarioinvfis_MailboxTrackingFolders": "Carpetas de seguimiento automático del buzón",
+      "crcb6_diarioinvfis_PrincipalObjectAttributeAccesses": "Uso compartido de campos",
+      "crcb6_diarioinvfis_ProcessSession": "Sesiones de proceso",
+      "crcb6_diarioinvfis_SyncErrors": "Errores de sincronización",
+      "crcb6_diarioinvfisid": "DiarioInvFis",
+      "crcb6_name": "Name",
+      "createdby": "Autor",
+      "createdon": "Fecha de creación",
+      "createdonbehalfby": "Autor (delegado)",
+      "importsequencenumber": "Número de secuencia de importación",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Fecha de modificación",
+      "modifiedonbehalfby": "Modificado por (delegado)",
+      "organizationid": "Id. de la organización",
+      "overriddencreatedon": "Fecha de creación del registro",
+      "statecode": "Estado",
+      "statuscode": "Razón para el estado",
+      "timezoneruleversionnumber": "Número de versión de regla de zona horaria",
+      "utcconversiontimezonecode": "Código de zona horaria de conversión UTC",
+      "versionnumber": "Número de versión"
+    },
+    "PreferredName": "DiarioInvFis",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "DiarioInvFis (Vistas)",
+    "Name": "_crcb6_diarioinvfis_views",
+    "RelatedEntityName": "DiarioInvFis",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2bb48a9b-1e02-4f9a-ba48-0f14e255a023": "DiarioInvFis inactivo",
+      "3ec0023a-fe4e-427e-948a-85bdb81f110b": "DiarioInvFis activo",
+      "44c30a50-1197-4acb-ac60-6cfc90240cfa": "Vista de búsqueda avanzada de DiarioInvFis",
+      "9466ea50-7358-4ca9-a504-aacd1dd6763d": "Vista de búsqueda de DiarioInvFis",
+      "ac5450f7-fa06-4cf9-850d-73843e36b713": "Vista asociada de DiarioInvFis"
+    }
+  },
+  {
+    "DisplayName": "Estado (DiarioInvFis)",
+    "Name": "crcb6_diarioinvfis_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Activo",
+      "1": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "DiarioInvFis"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "DiarioInvFis",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razón para el estado (DiarioInvFis)",
+    "Name": "crcb6_diarioinvfis_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Activo",
+      "2": "Inactivo"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "DiarioInvFis"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "DiarioInvFis",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -30,6 +30,9 @@
           },
           "Tabla3": {
             "tableName": "Tabla3"
+          },
+          "Tabla4": {
+            "tableName": "Tabla4"
           }
         }
       }
@@ -37,7 +40,8 @@
     "dataSources": [
       "Tabla1",
       "Tabla2",
-      "Tabla3"
+      "Tabla3",
+      "Tabla4"
     ],
     "dependencies": {
       "fileSource": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"

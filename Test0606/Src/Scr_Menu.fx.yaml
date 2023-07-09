@@ -22,7 +22,7 @@ Scr_Menu As screen:
         Height: =238
         Image: ='reloj-de-pared'
         OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank())
-        Width: =206
+        Width: =193
         X: =22
         Y: =201
         ZIndex: =3
@@ -31,8 +31,8 @@ Scr_Menu As screen:
         Height: =238
         Image: ='boton-de-reloj-historico'
         OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Dd_empresa_1)
-        Width: =206
-        X: =372
+        Width: =198
+        X: =378
         Y: =201
         ZIndex: =4
 
@@ -41,8 +41,8 @@ Scr_Menu As screen:
         Image: =salida
         OnSelect: =Navigate(Scr_Salida,ScreenTransition.Cover)
         Width: =206
-        X: =217
-        Y: =581
+        X: =53
+        Y: =577
         ZIndex: =5
 
     Lbl_Menu_principal_1 As label:
@@ -51,8 +51,8 @@ Scr_Menu As screen:
         Height: =70
         Size: =21
         Text: ="Fichaje"
-        Width: =232
-        X: =40
+        Width: =193
+        X: =22
         Y: =439
         ZIndex: =6
 
@@ -62,8 +62,8 @@ Scr_Menu As screen:
         Height: =70
         Size: =21
         Text: ="Historial de Fichaje"
-        Width: =232
-        X: =346
+        Width: =198
+        X: =378
         Y: =439
         ZIndex: =7
 
@@ -73,8 +73,15 @@ Scr_Menu As screen:
         Height: =70
         Size: =21
         Text: ="Salir"
-        Width: =232
-        X: =177
-        Y: =840
+        Width: =206
+        X: =53
+        Y: =831
         ZIndex: =8
+
+    Icon1 As icon.Export:
+        Icon: =Icon.Export
+        OnSelect: =
+        X: =432
+        Y: =663
+        ZIndex: =9
 
