@@ -25,43 +25,72 @@ Scr_Historial As screen:
         Height: =746
         Items: |-
             =If(
-                !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Dd_empresa_1),
+                !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
                 (Filter(
                     Tabla1,
                     'Usuario Marcación' = UserBD.'Id. Usuario',
                     Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
                 )),
                 (If(
-                    !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Dd_empresa_1),
+                    !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
                     (Filter(
                         Tabla1,
                         'Usuario Marcación' = UserBD.'Id. Usuario',
                         Dd_Fech_Ini <= DateValue('Fecha Marcación')
                     )),
                     (If(
-                        IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Dd_empresa_1),
+                        IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
                         (Filter(
                             Tabla1,
                             'Usuario Marcación' = UserBD.'Id. Usuario'
                         )),
                         (If(
-                            IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Dd_empresa_1),
+                            IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
                             (Filter(
                                 Tabla1,
                                 'Usuario Marcación' = UserBD.'Id. Usuario',
-                                Dd_empresa_1.Selected.Empresas = 'Empresa Asiganada'
+                                Filt_empresa.Selected.Empresas = 'Empresa Asiganada'
                             )),
-                            (Filter(
-                                Tabla1,
-                                'Usuario Marcación' = UserBD.'Id. Usuario',
-                                Dd_empresa_1.Selected.Empresas = 'Empresa Asiganada',
-                                Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                            (If(
+                                !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                (Filter(
+                                    Tabla1,
+                                    'Usuario Marcación' = UserBD.'Id. Usuario',
+                                    Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                    Dd_Fech_Ini <= DateValue('Fecha Marcación')
+                                )),
+                                If(
+                                    IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                    (Filter(
+                                        Tabla1,
+                                        'Usuario Marcación' = UserBD.'Id. Usuario',
+                                        Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                        Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                    )),
+                                    If(
+                                        IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
+                                        (Filter(
+                                            Tabla1,
+                                            'Usuario Marcación' = UserBD.'Id. Usuario',
+                                            Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                        )),
+                                        If(
+                                            !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                            (Filter(
+                                                Tabla1,
+                                                'Usuario Marcación' = UserBD.'Id. Usuario',
+                                                Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                                Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                            ))
+                                        )
+                                    )
+                                )
                             ))
                         ) )
                     ) )
                 ) )
             )
-        Size: =21
+        Size: =12
         Width: =582
         X: =29
         Y: =343
@@ -106,7 +135,7 @@ Scr_Historial As screen:
             Order: =6
             Text: =ThisItem.Tardanza
             Width: =100
-            X: =218
+            X: =422
             Y: =0
             ZIndex: =4
 
@@ -142,7 +171,7 @@ Scr_Historial As screen:
 
         "'Empresa Asiganada_Columna1' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Empresa Asiganada"
+            FieldDisplayName: ="Ubicación Asiganada"
             FieldName: ="Empresa_x0020_Asiganada"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
@@ -155,8 +184,10 @@ Scr_Historial As screen:
             ZIndex: =7
 
     Icon5 As icon.BackArrow:
+        AccessibleLabel: ="Atrás"
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Dd_empresa_1)
+        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Filt_empresa)
+        TabIndex: =0
         Tooltip: ="Atrás"
         X: =547
         Y: =258
@@ -183,26 +214,32 @@ Scr_Historial As screen:
         ZIndex: =7
 
     Dd_Fech_Ini As datepicker:
+        AccessibleLabel: ="Fecha Inicial"
         DefaultDate: =
         Height: =56
         Language: ="es-Mx"
         Size: =24
+        StartOfWeek: =StartOfWeek.Monday
         Width: =239
         X: =238
         Y: =138
         ZIndex: =8
 
     Dd_Fech_Fin As datepicker:
+        AccessibleLabel: ="Fecha Final"
         DefaultDate: =
         Height: =56
         Language: ="es-Mx"
         Size: =24
+        StartOfWeek: =StartOfWeek.Monday
         Width: =239
         X: =238
         Y: =194
         ZIndex: =9
 
-    Dd_empresa_1 As dropdown:
+    Filt_empresa As dropdown:
+        AccessibleLabel: ="Localización Asignada"
+        AllowEmptySelection: =true
         Default: =""
         Height: =61
         Items: =Tabla2
@@ -217,7 +254,7 @@ Scr_Historial As screen:
         Height: =72
         Size: =21
         Text: |-
-            ="Empresa Asignada: "
+            ="Ubicación Asignada: "
         Width: =176
         X: =18
         Y: =250

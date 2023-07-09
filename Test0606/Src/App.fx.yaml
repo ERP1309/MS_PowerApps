@@ -1,7 +1,6 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |-
-        =ClearCollect(Navegacion,Table({Título:"Inicio",icono:'logo ULN'},{Título:"Inicio2",icono:'logo ULN'},{Título:"Inicio3",icono:'logo ULN'},{Título:"Inicio4",icono:'logo ULN'}))
+    OnStart: =false
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

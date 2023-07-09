@@ -19,27 +19,33 @@ Scr_Menu As screen:
         ZIndex: =2
 
     Ic_Fichaje As image:
+        AccessibleLabel: ="Registrar Fichaje"
         Height: =238
         Image: ='reloj-de-pared'
         OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank())
+        TabIndex: =0
         Width: =193
         X: =22
         Y: =201
         ZIndex: =3
 
     Ic_Historico As image:
+        AccessibleLabel: ="Historico de Fichaje"
         Height: =238
         Image: ='boton-de-reloj-historico'
-        OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Dd_empresa_1)
+        OnSelect: =Navigate(Scr_Historial,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Filt_empresa)
+        TabIndex: =0
         Width: =198
         X: =378
         Y: =201
         ZIndex: =4
 
     Ic_Salir As image:
+        AccessibleLabel: ="Salir"
         Height: =238
         Image: =salida
         OnSelect: =Navigate(Scr_Salida,ScreenTransition.Cover)
+        TabIndex: =0
         Width: =206
         X: =53
         Y: =577
@@ -77,11 +83,4 @@ Scr_Menu As screen:
         X: =53
         Y: =831
         ZIndex: =8
-
-    Icon1 As icon.Export:
-        Icon: =Icon.Export
-        OnSelect: =
-        X: =432
-        Y: =663
-        ZIndex: =9
 

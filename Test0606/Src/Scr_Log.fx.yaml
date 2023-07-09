@@ -41,6 +41,7 @@ Scr_Log As screen:
         ZIndex: =4
 
     ClvLog_2 As text:
+        AccessibleLabel: ="Clave"
         Default: =""
         Height: =63
         HintText: ="Contraseña"
@@ -52,6 +53,7 @@ Scr_Log As screen:
         ZIndex: =6
 
     UserLog_2 As text:
+        AccessibleLabel: ="Usuario"
         Default: =""
         Height: =63
         HintText: ="E-mail"

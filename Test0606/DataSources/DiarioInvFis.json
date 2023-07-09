@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crcb6_diarioinvfis",
+    "MaxGetRowsCount": 500,
     "Name": "DiarioInvFis",
     "NativeCDSDataSourceInfoNameMapping": {
       "{Attachments}": "Attachments",
