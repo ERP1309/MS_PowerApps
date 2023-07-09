@@ -127,6 +127,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Add
+        OnSelect: =Navigate(Screen2)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
