@@ -1,5 +1,5 @@
 Scr_Bienvenido As screen:
-    BackgroundImage: ='pattern_japanese-pattern-2_3.5_3_0-0_90_1__99a3ad_ffffff'
+    BackgroundImage: ='pattern_cubes-3_4_5_0-0_35_2__dddddd_eeeeee'
     Fill: =RGBA(255, 255, 255, 1)
     ImagePosition: =ImagePosition.Fill
 
