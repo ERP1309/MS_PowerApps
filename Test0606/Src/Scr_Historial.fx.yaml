@@ -263,7 +263,7 @@ Scr_Historial As screen:
     Button1 As button:
         Height: =70
         OnSelect: |-
-            =Set(VarDescargaExcel,JSON(DataTable1.Selected));
+            =Set(VarDescargaExcel,JSON(DataTable1.S));
             DescargaApps.Run(VarDescargaExcel)
         Size: =12
         Text: ="Descargar en Excel"
