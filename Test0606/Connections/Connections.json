@@ -1,42 +1,16 @@
 {
-  "70e9c8bf-022d-49c8-b3af-3995bd780112": {
-    "connectionRef": {
-      "displayName": "Servicios espaciales",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Serviciosespaciales"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "70e9c8bf-022d-49c8-b3af-3995bd780112"
-  },
-  "77d9435f-aaf1-4d92-9e8f-ca8ca9fcac2e": {
+  "143f8584-784c-41e8-b195-fa52b2c11ad0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "a1753ed4-63d6-488d-8899-12f2cd1e222d": {
-          "value": "shared_excelonlinebusiness"
-        },
-        "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
-          "value": "shared_onedriveforbusiness"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
         }
       },
       "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "a1753ed4-63d6-488d-8899-12f2cd1e222d"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
@@ -48,11 +22,11 @@
       "DescargaApps"
     ],
     "dependencies": {
-      "shared_excelonlinebusiness": "a1753ed4-63d6-488d-8899-12f2cd1e222d",
+      "shared_excelonlinebusiness": "f291962d-d628-487d-949b-0e5a71e8bc47",
       "shared_onedriveforbusiness": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
     },
     "dependents": [],
-    "id": "77d9435f-aaf1-4d92-9e8f-ca8ca9fcac2e"
+    "id": "143f8584-784c-41e8-b195-fa52b2c11ad0"
   },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
@@ -90,19 +64,19 @@
     "dependents": [],
     "id": "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
   },
-  "a1753ed4-63d6-488d-8899-12f2cd1e222d": {
+  "8efcb844-eb36-440d-85aa-8c0b2b03d502": {
     "connectionRef": {
-      "displayName": "Excel Online (Empresas)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+      "displayName": "Servicios espaciales",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
     },
     "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "77d9435f-aaf1-4d92-9e8f-ca8ca9fcac2e"
+    "dataSources": [
+      "Serviciosespaciales"
     ],
-    "id": "a1753ed4-63d6-488d-8899-12f2cd1e222d"
+    "dependencies": {},
+    "dependents": [],
+    "id": "8efcb844-eb36-440d-85aa-8c0b2b03d502"
   },
   "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
     "connectionRef": {
@@ -115,7 +89,7 @@
     "dependencies": {},
     "dependents": [
       "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc",
-      "77d9435f-aaf1-4d92-9e8f-ca8ca9fcac2e"
+      "143f8584-784c-41e8-b195-fa52b2c11ad0"
     ],
     "id": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
   },
@@ -135,5 +109,19 @@
     "dependencies": {},
     "dependents": [],
     "id": "f04ea987-8e16-46f0-91ae-8b1fec414e4f"
+  },
+  "f291962d-d628-487d-949b-0e5a71e8bc47": {
+    "connectionRef": {
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "143f8584-784c-41e8-b195-fa52b2c11ad0"
+    ],
+    "id": "f291962d-d628-487d-949b-0e5a71e8bc47"
   }
 }
