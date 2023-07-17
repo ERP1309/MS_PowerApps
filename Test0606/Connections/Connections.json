@@ -1,33 +1,4 @@
 {
-  "143f8584-784c-41e8-b195-fa52b2c11ad0": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "DescargaApps"
-    ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "f291962d-d628-487d-949b-0e5a71e8bc47",
-      "shared_onedriveforbusiness": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
-    },
-    "dependents": [],
-    "id": "143f8584-784c-41e8-b195-fa52b2c11ad0"
-  },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
       "displayName": "Excel",
@@ -64,19 +35,48 @@
     "dependents": [],
     "id": "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
   },
-  "8efcb844-eb36-440d-85aa-8c0b2b03d502": {
+  "9091766c-d2f7-448a-b712-06eed5c06c6d": {
     "connectionRef": {
-      "displayName": "Servicios espaciales",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
+        }
+      }
     },
     "datasets": {},
     "dataSources": [
-      "Serviciosespaciales"
+      "DescargaApps"
     ],
-    "dependencies": {},
+    "dependencies": {
+      "shared_excelonlinebusiness": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad",
+      "shared_onedriveforbusiness": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
+    },
     "dependents": [],
-    "id": "8efcb844-eb36-440d-85aa-8c0b2b03d502"
+    "id": "9091766c-d2f7-448a-b712-06eed5c06c6d"
+  },
+  "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad": {
+    "connectionRef": {
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "9091766c-d2f7-448a-b712-06eed5c06c6d"
+    ],
+    "id": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad"
   },
   "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
     "connectionRef": {
@@ -89,7 +89,7 @@
     "dependencies": {},
     "dependents": [
       "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc",
-      "143f8584-784c-41e8-b195-fa52b2c11ad0"
+      "9091766c-d2f7-448a-b712-06eed5c06c6d"
     ],
     "id": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
   },
@@ -110,18 +110,18 @@
     "dependents": [],
     "id": "f04ea987-8e16-46f0-91ae-8b1fec414e4f"
   },
-  "f291962d-d628-487d-949b-0e5a71e8bc47": {
+  "f4d03ff1-72c9-487d-98a6-9dc7132b1981": {
     "connectionRef": {
-      "displayName": "Excel Online (Empresas)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+      "displayName": "Servicios espaciales",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
     },
     "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "143f8584-784c-41e8-b195-fa52b2c11ad0"
+    "dataSources": [
+      "Serviciosespaciales"
     ],
-    "id": "f291962d-d628-487d-949b-0e5a71e8bc47"
+    "dependencies": {},
+    "dependents": [],
+    "id": "f4d03ff1-72c9-487d-98a6-9dc7132b1981"
   }
 }

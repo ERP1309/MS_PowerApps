@@ -1202,7 +1202,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Fecha Marcación_Columna1",
-      "ParentIndex": 0,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1606,7 +1606,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Hora Marcación_Columna1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2963,7 +2963,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Minutos Adicionales_Columna1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3255,7 +3255,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Tardanza_Columna1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3348,7 +3348,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Tipo De Marcación_Columna1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

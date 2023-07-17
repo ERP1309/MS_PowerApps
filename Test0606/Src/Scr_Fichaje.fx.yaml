@@ -14,15 +14,16 @@ Scr_Fichaje As screen:
         DefaultLocation: =true
         DefaultLongitude: =Longitude_1
         DefaultZoomLevel: =15
-        DisplayMode: =DisplayMode.Edit
+        DisplayMode: =DisplayMode.View
         Height: =591
-        InfoCards: ='Map.InfoCards'.None
+        InfoCards: ='Map.InfoCards'.OnClick
         Items: =Location
         ItemsLatitudes: ="Latitude"
         ItemsLongitudes: ="Longitude"
         PinColor: =RGBA(255, 0, 0, 1)
         Pitch: =false
         ShapeDrawing: =false
+        ShowShapeLabels: =true
         Visible: =true
         Width: =640
         X: =0
@@ -273,4 +274,13 @@ Scr_Fichaje As screen:
         X: =40
         Y: =9
         ZIndex: =21
+
+    Icon1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)
+        Tooltip: ="Atrás"
+        X: =23
+        Y: =15
+        ZIndex: =22
 
