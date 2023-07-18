@@ -1,4 +1,33 @@
 {
+  "2e937781-48dc-4734-8402-dc8f509a2770": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "DescargaApps"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "f8d80fd2-7d52-42a8-82ca-f47418d993b0",
+      "shared_onedriveforbusiness": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
+    },
+    "dependents": [],
+    "id": "2e937781-48dc-4734-8402-dc8f509a2770"
+  },
   "325937a9-11ed-4c4c-828e-ee7bcd264476": {
     "connectionRef": {
       "displayName": "Servicios espaciales",
@@ -49,61 +78,6 @@
     "dependents": [],
     "id": "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc"
   },
-  "9091766c-d2f7-448a-b712-06eed5c06c6d": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad": {
-          "value": "shared_excelonlinebusiness"
-        },
-        "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "DescargaApps"
-    ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad",
-      "shared_onedriveforbusiness": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
-    },
-    "dependents": [],
-    "id": "9091766c-d2f7-448a-b712-06eed5c06c6d"
-  },
-  "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad": {
-    "connectionRef": {
-      "displayName": "Excel Online (Empresas)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "9091766c-d2f7-448a-b712-06eed5c06c6d"
-    ],
-    "id": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad"
-  },
   "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
     "connectionRef": {
       "displayName": "OneDrive para la Empresa",
@@ -115,7 +89,7 @@
     "dependencies": {},
     "dependents": [
       "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc",
-      "9091766c-d2f7-448a-b712-06eed5c06c6d"
+      "2e937781-48dc-4734-8402-dc8f509a2770"
     ],
     "id": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
   },
@@ -135,5 +109,19 @@
     "dependencies": {},
     "dependents": [],
     "id": "f04ea987-8e16-46f0-91ae-8b1fec414e4f"
+  },
+  "f8d80fd2-7d52-42a8-82ca-f47418d993b0": {
+    "connectionRef": {
+      "displayName": "Excel Online (Empresas)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "2e937781-48dc-4734-8402-dc8f509a2770"
+    ],
+    "id": "f8d80fd2-7d52-42a8-82ca-f47418d993b0"
   }
 }

@@ -75,7 +75,7 @@ Scr_Fichaje As screen:
     Button4 As button:
         Height: =82
         OnSelect: |-
-            =IfError(Or(IsBlank(Dd_empresa),IsBlank(Dd_Tip_marca)),Set(
+            =If(And(!IsBlank(Dd_empresa),!IsBlank(Dd_Tip_marca)),Set(
                 Latitude_1,
                 Text(Location.Latitude)
             ) And Set(
@@ -206,7 +206,7 @@ Scr_Fichaje As screen:
                 Scr_Menu,
                 ScreenTransition.Cover
             );
-            Reset(Dd_empresa) ;Reset(Dd_Tip_marca);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank()),Notify("Campo Ubicación Asignada ó Tipo de Marcación no pueden estar en blanco"))
+            ,Notify("Campo Ubicación Asignada ó Tipo de Marcación no pueden estar en blanco"))
         Size: =24
         Text: ="Registrar"
         Width: =280

@@ -22,7 +22,7 @@ Scr_Menu As screen:
         AccessibleLabel: ="Registrar Fichaje"
         Height: =238
         Image: ='reloj-de-pared'
-        OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank())
+        OnSelect: =Navigate(Scr_Fichaje,ScreenTransition.Cover);Set(Fecha_1,Blank());Set(hora_1,Blank());Set(Latitude_1,Blank());Set(Longitude_1,Blank());Reset(Dd_empresa);Reset(Dd_Tip_marca)
         TabIndex: =0
         Width: =193
         X: =22
