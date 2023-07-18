@@ -1,5 +1,5 @@
 {
-  "3b875752-7c0e-47c0-be7b-603053772975": {
+  "325937a9-11ed-4c4c-828e-ee7bcd264476": {
     "connectionRef": {
       "displayName": "Servicios espaciales",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
@@ -11,7 +11,7 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "3b875752-7c0e-47c0-be7b-603053772975"
+    "id": "325937a9-11ed-4c4c-828e-ee7bcd264476"
   },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {

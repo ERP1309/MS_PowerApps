@@ -329,8 +329,8 @@ Scr_Historial As screen:
                         ) )
                     ) )
                 ) )
-            )));
-            DescargaApps.Run(VarDescargaExcel)
+            )));Launch(
+            DescargaApps.Run(VarDescargaExcel).urlreporte)
         Size: =12
         Text: ="Descargar en Excel"
         Width: =94
