@@ -263,7 +263,73 @@ Scr_Historial As screen:
     Button1 As button:
         Height: =70
         OnSelect: |-
-            =Set(VarDescargaExcel,JSON(DataTable1.Selected));
+            =Set(VarDescargaExcel,JSON(
+                If(
+                !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
+                (Filter(
+                    Tabla1,
+                    'Usuario Marcación' = UserBD.'Id. Usuario',
+                    Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                )),
+                (If(
+                    !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
+                    (Filter(
+                        Tabla1,
+                        'Usuario Marcación' = UserBD.'Id. Usuario',
+                        Dd_Fech_Ini <= DateValue('Fecha Marcación')
+                    )),
+                    (If(
+                        IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
+                        (Filter(
+                            Tabla1,
+                            'Usuario Marcación' = UserBD.'Id. Usuario'
+                        )),
+                        (If(
+                            IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                            (Filter(
+                                Tabla1,
+                                'Usuario Marcación' = UserBD.'Id. Usuario',
+                                Filt_empresa.Selected.Empresas = 'Empresa Asiganada'
+                            )),
+                            (If(
+                                !IsBlank(Dd_Fech_Ini) && IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                (Filter(
+                                    Tabla1,
+                                    'Usuario Marcación' = UserBD.'Id. Usuario',
+                                    Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                    Dd_Fech_Ini <= DateValue('Fecha Marcación')
+                                )),
+                                If(
+                                    IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                    (Filter(
+                                        Tabla1,
+                                        'Usuario Marcación' = UserBD.'Id. Usuario',
+                                        Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                        Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                    )),
+                                    If(
+                                        IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && IsBlank(Filt_empresa),
+                                        (Filter(
+                                            Tabla1,
+                                            'Usuario Marcación' = UserBD.'Id. Usuario',
+                                            Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                        )),
+                                        If(
+                                            !IsBlank(Dd_Fech_Ini) && !IsBlank(Dd_Fech_Fin) && !IsBlank(Filt_empresa),
+                                            (Filter(
+                                                Tabla1,
+                                                'Usuario Marcación' = UserBD.'Id. Usuario',
+                                                Filt_empresa.Selected.Empresas = 'Empresa Asiganada',
+                                                Dd_Fech_Ini <= DateValue('Fecha Marcación') And Dd_Fech_Fin >= DateValue('Fecha Marcación')
+                                            ))
+                                        )
+                                    )
+                                )
+                            ))
+                        ) )
+                    ) )
+                ) )
+            )));
             DescargaApps.Run(VarDescargaExcel)
         Size: =12
         Text: ="Descargar en Excel"

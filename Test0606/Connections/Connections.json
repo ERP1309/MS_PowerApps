@@ -1,4 +1,18 @@
 {
+  "3b875752-7c0e-47c0-be7b-603053772975": {
+    "connectionRef": {
+      "displayName": "Servicios espaciales",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Serviciosespaciales"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3b875752-7c0e-47c0-be7b-603053772975"
+  },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
       "displayName": "Excel",
@@ -41,12 +55,24 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
+          "value": "shared_onedriveforbusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "b3ecee72-5b5b-4ff0-8c82-48ede3fa18ad"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
@@ -109,19 +135,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "f04ea987-8e16-46f0-91ae-8b1fec414e4f"
-  },
-  "f4d03ff1-72c9-487d-98a6-9dc7132b1981": {
-    "connectionRef": {
-      "displayName": "Servicios espaciales",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Serviciosespaciales"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "f4d03ff1-72c9-487d-98a6-9dc7132b1981"
   }
 }
