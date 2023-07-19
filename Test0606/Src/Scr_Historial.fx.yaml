@@ -329,8 +329,8 @@ Scr_Historial As screen:
                         ) )
                     ) )
                 ) )
-            )));Launch(
-            DescargaApps.Run(VarDescargaExcel).urlreporte)
+            ) ));
+            DescargaApps.Run(VarDescargaExcel)
         Size: =12
         Text: ="Descargar en Excel"
         Width: =94
@@ -339,11 +339,22 @@ Scr_Historial As screen:
         ZIndex: =12
 
     Label3 As label:
-        Height: =169
+        FontWeight: =FontWeight.Lighter
+        Height: =535
         Size: =21
         Text: =VarDescargaExcel
-        Width: =477
-        X: =56
-        Y: =700
+        Width: =600
+        X: =40
+        Y: =452
         ZIndex: =13
+
+    Button2 As button:
+        Height: =60
+        OnSelect: =
+        Size: =24
+        Text: ="Botón"
+        Width: =94
+        X: =488
+        Y: =201
+        ZIndex: =14
 

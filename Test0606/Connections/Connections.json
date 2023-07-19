@@ -1,16 +1,42 @@
 {
+  "03a5f342-ee4e-4a18-8a65-c29f01a4288a": {
+    "connectionRef": {
+      "displayName": "Servicios espaciales",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Serviciosespaciales"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "03a5f342-ee4e-4a18-8a65-c29f01a4288a"
+  },
   "2e937781-48dc-4734-8402-dc8f509a2770": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "d46543ed-ad5f-4465-baa8-2b597ca7e7a5": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "f8d80fd2-7d52-42a8-82ca-f47418d993b0": {
+          "value": "shared_excelonlinebusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "f8d80fd2-7d52-42a8-82ca-f47418d993b0"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "d46543ed-ad5f-4465-baa8-2b597ca7e7a5"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "f92a9a1e-f08e-4647-9d30-abb839db2ec2"
@@ -27,20 +53,6 @@
     },
     "dependents": [],
     "id": "2e937781-48dc-4734-8402-dc8f509a2770"
-  },
-  "325937a9-11ed-4c4c-828e-ee7bcd264476": {
-    "connectionRef": {
-      "displayName": "Servicios espaciales",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Serviciosespaciales"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "325937a9-11ed-4c4c-828e-ee7bcd264476"
   },
   "8c780a6c-bbd8-4528-b327-ffbd0d4a16fc": {
     "connectionRef": {
