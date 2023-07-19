@@ -350,7 +350,7 @@ Scr_Historial As screen:
 
     Button2 As button:
         Height: =60
-        OnSelect: =
+        OnSelect: =    
         Size: =24
         Text: ="Botón"
         Width: =94
