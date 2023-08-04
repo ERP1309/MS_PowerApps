@@ -236,7 +236,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "CenterLocation": {
         "Type": {
@@ -258,7 +258,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "ClickedLocation": {
         "Type": {
@@ -280,7 +280,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "DeletedShape": {
         "Type": {
@@ -326,7 +326,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "GeocodedItems": {
         "Type": {
@@ -360,7 +360,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "RouteDirection": {
         "Type": {
@@ -498,7 +498,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       },
       "SelectedShape": {
         "Type": {
@@ -544,7 +544,7 @@
             }
           ]
         },
-        "Version": "1.333"
+        "Version": "1.334"
       }
     },
     "PCFDynamicSchemaForIRRetrieval": {
@@ -648,6 +648,6 @@
     "LastModifiedTimestamp": "0",
     "Name": "typedDataCard",
     "OverridableProperties": {},
-    "Version": "1.0.5"
+    "Version": "1.0.6"
   }
 }

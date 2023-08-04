@@ -11,9 +11,10 @@ Scr_Historial As screen:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Height: =74
-        Size: =40
+        Size: =32
         Text: ="Historial de Marcación"
-        Width: =640
+        Width: =477
+        X: =101
         Y: =10
         ZIndex: =2
 
@@ -185,12 +186,13 @@ Scr_Historial As screen:
 
     Icon5 As icon.BackArrow:
         AccessibleLabel: ="Atrás"
+        Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Scr_Menu,ScreenTransition.Cover)&&Reset(Dd_Fech_Ini)&&Reset(Dd_Fech_Fin)&Reset(Filt_empresa)
         TabIndex: =0
         Tooltip: ="Atrás"
-        X: =547
-        Y: =258
+        X: =23
+        Y: =15
         ZIndex: =5
 
     Label1 As label:
